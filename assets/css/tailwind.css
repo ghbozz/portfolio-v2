@@ -1,9 +1,10 @@
+/* TAILWIND */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 /* UTILITIES */
-body {
-  background-color: #0f1218;
-  color: #c8d1d9;
-}
+@import "~/assets/css/utilities";
+@import "~/assets/css/fonts";
+@import "~/assets/css/buttons";
+@import "~/assets/css/animations";

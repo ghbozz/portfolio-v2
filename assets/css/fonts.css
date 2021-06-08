@@ -1,0 +1,10 @@
+.text-gradient-green {
+  font-size: 72px;
+  background: linear-gradient(
+    135deg,
+    rgba(1, 167, 114, 1) 0%,
+    rgba(1, 167, 114, 0.5) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

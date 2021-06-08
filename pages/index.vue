@@ -1,6 +1,13 @@
 <template>
-  <div class="container">
-    <h1 class="title"><span class="accent">romain</span>sanson.dev</h1>
+  <div class="w-full h-full bg-primary-dark">
+    <div class="container mx-auto h-screen flex items-center justify-center flex-col">
+      <h1 class="text-7xl text-primary-light mb-4">
+        <span class="pl-1">romain</span><span class="font-thin opacity-50">sanson</span><span class="text-gradient-green font-semibold pr-1">.dev</span>
+      </h1>
+      <button class="main-btn relative vim-mode">
+        contact
+      </button>
+    </div>
   </div>
 </template>
 
@@ -9,40 +16,4 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

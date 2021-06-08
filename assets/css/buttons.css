@@ -1,0 +1,23 @@
+/* BUTTONS */
+.main-btn {
+  @apply text-3xl uppercase text-primary-green duration-200 hover:bg-primary-green hover:text-primary-dark;
+  line-height: 1.75rem;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+.vim-mode:hover::after {
+  display: block;
+}
+
+.vim-mode::after {
+  @apply bg-primary-green;
+  content: "";
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: -0.75rem;
+  top: 50%;
+  width: 1rem;
+  height: 100%;
+  display: none;
+  animation: soft-blink 1s infinite;
+}
