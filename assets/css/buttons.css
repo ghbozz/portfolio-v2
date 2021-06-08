@@ -1,4 +1,12 @@
 /* BUTTONS */
+button {
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
 .main-btn {
   @apply text-3xl uppercase text-primary-green duration-200 hover:bg-primary-green hover:text-primary-dark;
   line-height: 1.75rem;
