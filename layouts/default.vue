@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nuxt />
+    <Breakpoints />
   </div>
 </template>
 

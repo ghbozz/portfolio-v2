@@ -1,0 +1,18 @@
+/* FORMS */
+label {
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  @apply bg-primary-dark border-primary-grey border-2 border-opacity-10 focus:border-opacity-50 focus:outline-none focus:border-primary-green;
+  text-indent: 10px;
+}
+
+input {
+  @apply h-12;
+}
+
+textarea {
+  @apply h-24;
+}
