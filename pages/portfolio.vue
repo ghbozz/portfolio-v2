@@ -5,7 +5,7 @@
         <h2 class="uppercase text-6xl">project title</h2>
       </div>
       <div class="display hidden xl:block">
-        <PortfolioDisplay />
+        <PortfolioDisplay :work="works[0]" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
