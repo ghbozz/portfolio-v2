@@ -11,7 +11,7 @@
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
       </div>
-      <PortfolioWork
+      <PortfolioCard
         v-for="work in works" 
         :work="work" 
         :active="selected === work" 
