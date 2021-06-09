@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen text-primary-light shadow-inner duration-1000 overflow-hidden flex items-center justify-around">
+  <div class="w-screen text-primary-light shadow-inner duration-1000 overflow-hidden flex items-center justify-around h-0">
     <div>
       
     </div>
