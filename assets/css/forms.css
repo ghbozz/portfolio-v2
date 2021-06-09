@@ -22,4 +22,5 @@ input {
 
 textarea {
   @apply h-24;
+  resize: none;
 }

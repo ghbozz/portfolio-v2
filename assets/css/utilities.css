@@ -3,6 +3,10 @@
   font-family: "Jost", sans-serif;
 }
 
+body {
+  background: #22262f;
+}
+
 body.preload * {
   animation-duration: 0s !important;
   -webkit-animation-duration: 0s !important;
@@ -10,10 +14,36 @@ body.preload * {
     padding 0s, margin 0s !important;
 }
 
+/* VIEW PORT */
+.h-screen-50 {
+  height: 50vh;
+}
+
+.h-screen-60 {
+  height: 60vh;
+}
+
+.h-screen-70 {
+  height: 70vh;
+}
+
+.h-screen-80 {
+  height: 80vh;
+}
+
+.h-screen-90 {
+  height: 90vh;
+}
+
+/* TRANSITIONS */
 .duration-1500 {
   transition: all 1.5s;
 }
 
 .duration-2000 {
   transition: all 2s;
+}
+
+.min-h-container {
+  height: calc(100vh - 64px);
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Nav />
-    <Nuxt />
+    <Nuxt /> 
     <Breakpoints />
   </div>
 </template>

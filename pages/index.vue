@@ -7,7 +7,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <Contact :class="contact ? 'opened' : 'closed'" />
+      <IndexContact :class="contact ? 'opened' : 'closed'" />
     </div>
   </div>
 </template>

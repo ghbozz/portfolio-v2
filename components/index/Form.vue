@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-col text-1xl">
       <label class="relative" for="body">message</label>
-      <textarea @focus="focus" name="body"></textarea>
+      <textarea class="h-48" @focus="focus" name="body"></textarea>
     </div>
   </form>
 </template>
@@ -24,5 +24,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
