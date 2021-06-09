@@ -1,6 +1,5 @@
 <template>
-  <div class="w-screen text-primary-light closed duration-1000">
-
+  <div class="w-screen text-primary-light shadow-inner duration-1000">
   </div>
 </template>
 
@@ -11,8 +10,7 @@ export default {}
 
 <style scoped>
   .closed {
-    height: 0px;
-    overflow: hidden;
+    animation: close 1s ease-in-out forwards;
   }
 
   .opened {

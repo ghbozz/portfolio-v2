@@ -13,8 +13,9 @@ button:focus {
   padding: 0 0.2rem 0 0.2rem;
 }
 
+.vim-mode.active::after,
 .vim-mode:hover::after {
-  display: block;
+  display: block !important;
 }
 
 .vim-mode::after {
