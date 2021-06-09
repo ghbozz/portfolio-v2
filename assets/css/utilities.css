@@ -9,3 +9,11 @@ body.preload * {
   transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s,
     padding 0s, margin 0s !important;
 }
+
+.duration-1500 {
+  transition: all 1.5s;
+}
+
+.duration-2000 {
+  transition: all 2s;
+}

@@ -1,5 +1,5 @@
 <template>
-  <form class="w-2/3">
+  <form class="w-10/12 md:w-2/3 opacity-0 duration-2000">
     <div class="flex flex-col text-1xl">
       <label class="relative" for="email">email</label>
       <input @focus="focus" type="text" name="email">

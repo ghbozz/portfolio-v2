@@ -4,7 +4,7 @@
       <h1 class="text-5xl md:text-7xl mb-4">
         <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1">.dev</span>
       </h1>
-      <button @click="toggle_contact" class="main-btn relative mb-4 vim-mode">
+      <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
       <Contact :class="contact ? 'opened' : 'closed'" />
@@ -24,15 +24,25 @@ export default {
       this.contact = !this.contact;
 
       if (this.contact) {
-        evt.target.classList.toggle('active');
+        this.contact_button.classList.add('active');
+        this.form.classList.add('opacity-100');
       } else {
-        evt.target.classList.remove('active');
+        this.contact_button.classList.remove('active');
+        this.form.classList.remove('opacity-100');
 
-        document.querySelectorAll('label').forEach((label) => {
+        this.labels.forEach((label) => {
           label.classList.remove('active');
         })
       }
+    },
+    setup() {
+      this.form = this.$vnode.elm.querySelector('form');
+      this.labels = this.$vnode.elm.querySelectorAll('label');
+      this.contact_button = this.$vnode.elm.querySelector('#contact-button')
     }
   },
+  mounted() {
+    this.setup();
+  }
 }
 </script>

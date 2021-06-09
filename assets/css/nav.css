@@ -1,0 +1,4 @@
+.nav-item {
+  @apply mx-2 inline-block font-normal uppercase text-primary-green cursor-pointer hover:bg-primary-green hover:text-primary-dark;
+  padding: 0 0.2rem 0 0.2rem;
+}
