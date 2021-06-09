@@ -1,19 +1,15 @@
 <template>
-  <div class="w-screen text-primary-light shadow-inner duration-1000">
-  </div>
+  <form class="rounded">
+    <input type="text" name="email">
+  </form>
 </template>
 
 <script>
-export default {}
+export default {
+
+}
 </script>
 
+<style>
 
-<style scoped>
-  .closed {
-    animation: close 1s ease-in-out forwards;
-  }
-
-  .opened {
-    animation: open 1s ease-in-out forwards;
-  }
 </style>

@@ -30,6 +30,13 @@ export default {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
+        crossorigin: "anonymous",
+        referrerpolicy: "no-referrer"
       }
     ],
     script: [

@@ -1,5 +1,4 @@
 .text-gradient-light {
-  font-size: 72px;
   background: linear-gradient(
     135deg,
     rgba(235, 244, 241, 1) 0%,
@@ -10,7 +9,6 @@
 }
 
 .text-gradient-green {
-  font-size: 72px;
   background: linear-gradient(
     135deg,
     rgba(1, 167, 114, 1) 0%,

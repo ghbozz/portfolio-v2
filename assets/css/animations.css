@@ -5,8 +5,8 @@
 }
 
 @keyframes open {
-  0% { opacity: 0%; width: 0vw; background-color: #0be9a2; }
-  5% { opacity: 0%; width: 50vw; background-color: #1aac7d; }
+  0% { opacity: 0%; width: 0vw; background-color: #00ffae; }
+  5% { opacity: 0%; width: 50vw; background-color: #09c388; }
   15% { opacity: 100%; width: 100vw; height: 2px; background-color: #60caa9; }
   75% { opacity: 100%; width: 100vw; height: 7px; background-color: #2a2e38; }
   100% { opacity: 100%; width: 100vw; height: 50vh; background: #2a2e38; }
