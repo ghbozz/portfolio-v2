@@ -1,16 +1,22 @@
 <template>
   <div class="w-full bg-primary-dark mt-12 lg:mt-0 text-primary-light">
     <div class="container mx-auto min-h-container pb-6">
-      <div class="display-title hidden xl:flex justify-start items-end">
-        <h2 class="uppercase text-6xl">project title</h2>
+      <div class="display-title hidden xl:flex justify-between items-end">
+        <h2 class="uppercase text-6xl flex items-center">{{ selected.title }}</h2>
+        <span class="text-1xl mr-2 text-secondary-grey uppercase">preview</span>
       </div>
       <div class="display hidden xl:block">
-        <PortfolioDisplay :work="works[0]" />
+        <PortfolioPreview :work="selected" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
       </div>
-      <PortfolioWork v-for="work in works" :work="work" :key="work.id" />
+      <PortfolioWork
+        v-for="work in works" 
+        :work="work" 
+        :active="selected === work" 
+        :key="work.id" 
+      />
     </div>
   </div>
 </template>
@@ -19,11 +25,18 @@
 export default {
   data() {
     return {
-      works: [
-        { id: 1, title: 'params' }, 
-        { id: 2, title: 'nostrumcare' }, 
-        { id: 3, title: 'milapaloma' }
-      ]
+      works: [],
+      selected: null
+    }
+  },
+  async fetch() {
+    const data = await this.$content('works').sortBy('index', 'asc').fetch();
+    this.works = data.works
+    this.selected = this.works[0]
+  },
+  methods: {
+    select(id) {
+      this.selected = this.works.find(work => work.id === id)
     }
   }
 }

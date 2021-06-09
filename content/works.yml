@@ -1,0 +1,13 @@
+works:
+  - id: 1
+    title: params
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum consequuntur corrupti sint ratione dolores.
+    date: nov 21
+    logo: params-logo.jpg
+    hero: params-home.jpg
+  - id: 2
+    title: nostrumcare
+    description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum consequuntur corrupti sint ratione dolores.
+    date: nov 21
+    logo: nostrumcare-logo.jpg
+    hero: nostrumcare-home.jpg

@@ -1,17 +1,26 @@
 <template>
-  <div :class="`work-card-${work.id} work-card`">
-    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="">
+  <div @click="click" :class="[{ active: active }, `work-card-${work.id}`, 'work-card']">
+    <img :src="logo()" alt="">
     <div class="w-2/3 p-4">
-      <p class="text-secondary-grey font-semibold opacity-80">Nov 21</p>
+      <p class="text-secondary-grey font-semibold opacity-80">{{ work.date }}</p>
       <h3 class="font-semibold text-2xl">{{ work.title }}</h3>
-      <p class="text-primary-grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum consequuntur corrupti sint ratione dolores.</p>
+      <p class="text-primary-grey">{{ work.description }}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['work']
+  props: ['work', 'active'],
+  methods: {
+    logo() {
+      const directory = this.work.title.toLowerCase().replace(' ', '_')
+      return require(`~/assets/images/works/${directory}/logo.jpg`)
+    },
+    click() {
+      this.$parent.select(this.work.id)
+    }
+  }
 }
 </script>
 
