@@ -22,7 +22,16 @@ export default {
   methods: {
     toggle_contact(evt) {
       this.contact = !this.contact;
-      evt.target.classList.toggle('active');
+
+      if (this.contact) {
+        evt.target.classList.toggle('active');
+      } else {
+        evt.target.classList.remove('active');
+
+        document.querySelectorAll('label').forEach((label) => {
+          label.classList.remove('active');
+        })
+      }
     }
   },
 }

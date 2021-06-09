@@ -1,11 +1,18 @@
 /* FORMS */
 label {
+  @apply mb-1;
   text-transform: uppercase;
+  width: fit-content;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+label.active {
+  @apply bg-primary-green text-primary-dark;
 }
 
 input,
 textarea {
-  @apply bg-primary-dark border-primary-grey border-2 border-opacity-10 focus:border-opacity-50 focus:outline-none focus:border-primary-green;
+  @apply mb-2 bg-primary-dark border-primary-grey border-2 border-opacity-10 focus:border-opacity-50 focus:outline-none focus:border-primary-green;
   text-indent: 10px;
 }
 
