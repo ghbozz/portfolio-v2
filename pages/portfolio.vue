@@ -14,12 +14,12 @@
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
       </div>
-      <LazyPortfolioCard
-        v-for="work in works" 
-        :work="work" 
-        :active="selected === work" 
-        :key="work.id"
-      />
+        <PortfolioCard 
+          v-for="work in works" 
+          :key="work.id"
+          :work="work" 
+          :active="selected === work" 
+        />
     </div>
   </div>
 </template>
