@@ -2,20 +2,23 @@
   <div class="w-full bg-primary-dark mt-12 lg:mt-0 text-primary-light">
     <div class="container mx-auto min-h-container pb-6">
       <div class="display-title hidden xl:flex justify-between items-end">
-        <h2 class="uppercase text-6xl flex items-center">{{ selected.title }}</h2>
+        <h2 v-if="selected" 
+            class="uppercase text-6xl flex items-center">
+            {{ selected.title }}
+        </h2>
         <span class="text-1xl mr-2 text-secondary-grey uppercase">preview</span>
       </div>
       <div class="display hidden xl:block">
-        <PortfolioPreview :work="selected" />
+        <LazyPortfolioPreview :work="selected" v-if="selected" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
       </div>
-      <PortfolioCard
+      <LazyPortfolioCard
         v-for="work in works" 
         :work="work" 
         :active="selected === work" 
-        :key="work.id" 
+        :key="work.id"
       />
     </div>
   </div>
