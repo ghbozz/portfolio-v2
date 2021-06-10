@@ -15,6 +15,14 @@ module.exports = {
       "primary-grey": "#b2b9b7",
       "secondary-grey": "#767a79",
       "primary-green": "#05a672"
+    },
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "1rem",
+        lg: "2rem",
+        xl: "3rem"
+      }
     }
   },
   variants: {},
