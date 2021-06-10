@@ -1,5 +1,5 @@
 <template>
-  <div id="social" class="h-full w-full"
+  <div id="social" class="h-full w-full duration-2000"
        :style="{ backgroundImage: 'url(' + background + ')' }">
 
     <div id="socials" class="absolute">
@@ -11,16 +11,21 @@
 </template>
 
 <script>
-export default {
+export default {  
   data() {
     return {
       background : require('~/assets/images/hoodie.jpg'),
     }
   },
   methods: {
+    // WIP
     toggle_socials() {
       console.log('toggle socials')
+    },
+    toggle_image() {
+      console.log('toggle hoodie')
     }
+    // WIP
   }
 }
 </script>

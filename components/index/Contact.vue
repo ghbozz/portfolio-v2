@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen text-primary-light shadow-inner duration-1000 overflow-hidden flex items-center justify-around h-0 flex-col md:flex-row">
+  <div class="w-screen text-primary-light shadow-inner duration-1000 overflow-x-hidden flex items-center justify-around h-0 flex-col md:flex-row">
     <div class="w-full h-full md:w-1/2 flex items-center justify-center py-6 md:py-0">
       <IndexForm />
     </div>
@@ -10,11 +10,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      delay: 100,
+    }
+  }
+}
 </script>
 
 
-<style>
+<style scoped>
   .closed {
     animation: close 1s ease-out forwards;
   }
@@ -23,13 +29,19 @@ export default {}
     animation: open 1s ease-out forwards;
   }
 
-  .opened img {
-    transition: opacity 1s ease-out;
-    opacity: 1;
+  .opened::before,
+  .opened::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
   }
 
-  .closed img {
-    transition: opacity 1s ease-out;
-    opacity: 0;
+  .opened::before {
+    animation: shine-left 1s forwards;
+  }
+
+  .opened::after {
+    animation: shine-right 1s forwards;
   }
 </style>
