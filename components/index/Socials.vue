@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-full">
+  <div class="h-full">
     <img src="~/assets/images/hoodie.jpg" alt="">
     <div id="socials" class="absolute">
       <i class="fab fa-github social-icon"></i>
@@ -29,9 +29,12 @@ export default {
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 140%;
+    height: 140%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     object-fit: cover;
-    filter: grayscale(100%) sepia(20%) saturate(150%) opacity(50%) contrast(145%);
+    filter: grayscale(100%) sepia(100%) brightness(80%) hue-rotate(60deg) saturate(200%) opacity(65%) contrast(100%);
   }
 </style>

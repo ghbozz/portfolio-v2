@@ -8,6 +8,9 @@
       <label class="relative" for="body">message</label>
       <textarea class="h-48" @focus="focus" name="body"></textarea>
     </div>
+    <div class="flex flex-col text-1xl mt-2">
+      <input type="submit" class="main-btn" value="send">
+    </div>
   </form>
 </template>
 
