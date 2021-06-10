@@ -1,6 +1,7 @@
 <template>
-  <div class="h-full">
-    <img src="~/assets/images/hoodie.jpg" class="hidden md:block opacity-0" alt="">
+  <div id="social" class="h-full w-full"
+       :style="{ backgroundImage: 'url(' + background + ')' }">
+
     <div id="socials" class="absolute">
       <i class="fab fa-github social-icon"></i>
       <i class="fab fa-linkedin-in social-icon"></i>
@@ -11,14 +12,28 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      background : require('~/assets/images/hoodie.jpg'),
+    }
+  },
+  methods: {
+    toggle_socials() {
+      console.log('toggle socials')
+    }
+  }
 }
 </script>
 
 <style scoped>
+  #social {
+    background-size: cover;
+    background-position: center;
+  }
+
   #socials {
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 20%;
     left: 50%;
   }
 
