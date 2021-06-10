@@ -1,0 +1,13 @@
+works:
+  - id: 1
+    title: params
+    description: The fastest way to share your settings and gear with your community.
+    date: Nov 2020
+    logo: params-logo.jpg
+    hero: params-home.jpg
+  - id: 2
+    title: nostrumcare
+    description: L’assurance qui s’adapte au monde d’aujourd’hui.
+    date: Mar 2021
+    logo: nostrumcare-logo.jpg
+    hero: nostrumcare-home.jpg

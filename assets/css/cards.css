@@ -1,3 +1,16 @@
 .work-card {
-  @apply bg-secondary-dark rounded-lg flex items-center justify-around p-4 cursor-pointer duration-200 border-2 border-secondary-grey border-opacity-10 hover:border-opacity-50 hover:border-primary-green;
+  @apply bg-secondary-dark rounded-lg flex items-center justify-around p-4 cursor-pointer border-2 border-secondary-grey border-opacity-10 hover:border-opacity-50 hover:border-primary-green;
+}
+
+.work-card.active {
+  @apply border-2 border-secondary-light border-opacity-5 shadow-lg;
+}
+
+.work-card.active img {
+  @apply duration-500;
+}
+
+.work-card.active img {
+  @apply shadow-lg border-2 border-primary-green border-opacity-75;
+  transform: scale(1.05);
 }
