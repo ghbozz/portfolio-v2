@@ -8,9 +8,23 @@ button:focus {
 }
 
 .main-btn {
-  @apply text-3xl uppercase text-primary-green duration-200 hover:bg-primary-green hover:text-primary-dark;
+  @apply text-3xl uppercase cursor-pointer text-primary-green duration-200 hover:bg-primary-green hover:text-primary-dark;
   line-height: 1.75rem;
   padding: 0 0.2rem 0 0.2rem;
+  z-index: 99;
+}
+
+.main-btn:hover::before {
+  @apply bg-primary-green;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+  filter: blur(30px);
+  z-index: -1;
 }
 
 .vim-mode.active::after,

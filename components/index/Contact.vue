@@ -3,7 +3,7 @@
     <div class="w-full h-full md:w-1/2 flex items-center justify-center">
       <IndexForm />
     </div>
-    <div class="w-full h-full md:w-1/2 flex items-center justify-center">
+    <div class="w-full h-full md:w-1/2 flex items-center justify-center relative">
       <IndexSocials />
     </div>
   </div>
