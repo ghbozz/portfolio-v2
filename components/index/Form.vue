@@ -8,8 +8,10 @@
       <label class="relative" for="body">message</label>
       <textarea class="h-48" @focus="focus" name="body"></textarea>
     </div>
-    <div class="flex flex-col text-1xl mt-2">
-      <input type="submit" class="main-btn" value="send">
+    <div class="flex justify-center items-center mt-2">
+      <button class="main-btn relative">
+        send
+      </button>
     </div>
   </form>
 </template>

@@ -10,17 +10,22 @@ label.active {
   @apply bg-primary-green text-primary-dark;
 }
 
-input,
+input[type="text"],
 textarea {
   @apply mb-2 bg-primary-dark border-primary-grey border-2 border-opacity-10 focus:border-opacity-50 focus:outline-none focus:border-primary-green;
   text-indent: 10px;
 }
 
-input {
+input[type="text"] {
   @apply h-12;
 }
 
 textarea {
   @apply h-24;
   resize: none;
+}
+
+input[type="submit"] {
+  @apply main-btn;
+  background: transparent;
 }

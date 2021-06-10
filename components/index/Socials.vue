@@ -1,6 +1,6 @@
 <template>
   <div class="h-full">
-    <img src="~/assets/images/hoodie.jpg" alt="">
+    <img src="~/assets/images/hoodie.jpg" class="hidden md:block" alt="">
     <div id="socials" class="absolute">
       <i class="fab fa-github social-icon"></i>
       <i class="fab fa-linkedin-in social-icon"></i>

@@ -3,7 +3,7 @@
     <a :href="work.url" target="_blank">
       <i class="fas fa-external-link-alt text-secondary-light hover:text-primary-light duration-200"></i>
     </a>
-    <img class="rounded-lg" :src="home()" alt="">
+    <img class="rounded-lg absolute" :src="home()" alt="">
     <div class="scroll absolute"></div>
   </div>
 </template>
@@ -24,7 +24,6 @@ export default {
   img {
     width: 100%;
     object-fit: cover;
-    transform: scale(1.05);
   }
 
   i {
