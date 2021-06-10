@@ -14,19 +14,22 @@ export default {}
 </script>
 
 
-<style scoped>
+<style>
   .closed {
-    animation: close 1s ease-in-out forwards;
+    animation: close 1s ease-out forwards;
   }
 
   .opened {
-    animation: open 1s ease-in-out forwards;
+    animation: open 1s ease-out forwards;
   }
 
-  /* #socials {
-    background-image: url("~assets/images/hoodie.jpg");
-    background-size: 150%;
-    background-position: bottom;
-    filter: grayscale(75%) sepia(30%) saturate(100%) opacity(50%) invert(100%);
-  } */
+  .opened img {
+    transition: opacity 1s ease-out;
+    opacity: 1;
+  }
+
+  .closed img {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+  }
 </style>

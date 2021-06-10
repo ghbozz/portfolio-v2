@@ -1,6 +1,6 @@
 <template>
   <div class="h-full">
-    <img src="~/assets/images/hoodie.jpg" class="hidden md:block" alt="">
+    <img src="~/assets/images/hoodie.jpg" class="hidden md:block opacity-0" alt="">
     <div id="socials" class="absolute">
       <i class="fab fa-github social-icon"></i>
       <i class="fab fa-linkedin-in social-icon"></i>
@@ -35,6 +35,6 @@ export default {
     bottom: 0;
     left: 0;
     object-fit: cover;
-    filter: grayscale(100%) sepia(100%) brightness(80%) hue-rotate(60deg) saturate(200%) opacity(65%) contrast(100%);
+    /* filter: brightness(80%) saturate(100%) opacity(100%) contrast(50%); */
   }
 </style>

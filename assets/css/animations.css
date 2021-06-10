@@ -16,4 +16,31 @@
   0% { opacity: 100%; width: 100vw; height: 50vh; background: #2a2e38; }
   75% { opacity: 100%; width: 100vw; height: 0; background: #2a2e38; }
   100% { opacity: 0%; width: 0vw; height: 0; }
-} 
+}
+
+/*-SLIDE */
+.up-slide-enter-active {
+  transition: all .8s ease;
+}
+.up-slide-leave-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .5s ease;
+}
+.up-slide-enter, .up-slide-leave-to {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+/* SIDE-SLIDE */
+.side-slide-enter-active {
+  transition: all 1s ease;
+}
+.side-slide-leave-active {
+  transition: all 1.5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.side-slide-enter, .side-slide-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}

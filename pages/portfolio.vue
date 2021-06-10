@@ -2,22 +2,26 @@
   <div class="w-full bg-primary-dark mt-12 lg:mt-0 text-primary-light">
     <div class="container mx-auto min-h-container pb-6">
       <div class="display-title hidden xl:flex justify-between items-end">
-        <h2 v-if="selected" 
-            class="uppercase text-6xl flex items-center">
-            {{ selected.title }}
-        </h2>
+        <transition name="side-slide" mode="out-in" appear>
+          <h2 v-if="selected"
+              :key="selected.title"
+              style="transition-duration: 0.5s;"
+              class="uppercase text-6xl flex items-center">
+              {{ selected.title }}
+          </h2>
+        </transition>
         <span class="text-1xl mr-2 text-secondary-grey uppercase">preview</span>
       </div>
-      <div class="display hidden xl:block">
-        <LazyPortfolioPreview :work="selected" v-if="selected" />
+      <div class="display hidden xl:block relative">
+        <PortfolioPreview :work="selected" v-if="selected" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
       </div>
-        <PortfolioCard 
+        <PortfolioCard
           v-for="work in works" 
           :key="work.id"
-          :work="work" 
+          :work="work"
           :active="selected === work" 
         />
     </div>
@@ -40,6 +44,8 @@ export default {
   methods: {
     select(id) {
       this.selected = this.works.find(work => work.id === id)
+      const preview = this.$children.find(item => item._name === '<PortfolioPreview>')
+      preview.$vnode.key = preview.$vnode.key++ || 1
     }
   }
 }

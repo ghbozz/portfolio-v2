@@ -1,6 +1,8 @@
 <template>
-  <transition name="slide" mode="out-in" appear>
-    <div @click="click" :class="[{ active: active }, `work-card-${work.id}`, 'work-card w-full']">
+  <transition name="side-slide" mode="out-in" appear>
+    <div @click="click" 
+         :class="[{ active: active }, `work-card-${work.id}`, 'work-card w-full']"
+         :style="`transition-delay: 0.${work.id * 3}s;`">
       <img class="h-28 w-28" :src="logo()" alt="">
       <div class="w-2/3 p-4">
         <p class="text-secondary-grey font-semibold opacity-80">{{ work.date }}</p>
@@ -30,17 +32,5 @@ export default {
   img {
     border-radius: 50%;
     object-fit: cover;
-  }
-
-  /* TRANSITION */
-  .slide-enter-active {
-    transition: all .5s ease;
-  }
-  .slide-leave-active {
-    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-  }
-  .slide-enter, .slide-leave-to {
-    transform: translateX(10px);
-    opacity: 0;
   }
 </style>
