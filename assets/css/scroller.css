@@ -22,16 +22,6 @@
   animation: scroll 4s infinite;
 }
 
-.scroll-wrapper {
-  background: rgb(34, 38, 47);
-  background: linear-gradient(
-    90deg,
-    rgba(34, 38, 47, 0) 0%,
-    rgba(34, 38, 47, 0.1) 50%,
-    rgba(34, 38, 47, 0) 100%
-  );
-}
-
 @-webkit-keyframes scroll {
   0% {
     opacity: 0;

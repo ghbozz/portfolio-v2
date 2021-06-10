@@ -1,9 +1,7 @@
 <template>
   <div class="w-full h-full text-primary-light mr-2 overflow-y-scroll overflow-x-hidden rounded-lg shadow-lg relative">
     <img class="rounded-lg" :src="home()" alt="">
-    <!-- <div class="scroll-wrapper w-full h-24 sticky bottom-0"> -->
-      <div class="scroll absolute"></div>
-    <!-- </div> -->
+    <div class="scroll absolute"></div>
   </div>
 </template>
 
