@@ -7,7 +7,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <IndexContact :class="contact ? 'opened' : 'closed'" />
+      <IndexContact :class="opened ? 'opened' : 'closed'" />
     </div>
   </div>
 </template>
@@ -16,14 +16,14 @@
 export default {
   data() {
     return {
-      contact: false,
+      opened: false
     }
   },
   methods: {
     toggle_contact(evt) {
-      this.contact = !this.contact;
+      this.opened = !this.opened;
 
-      if (this.contact) {
+      if (this.opened) {
         this.contact_button.classList.add('active');
         this.form.classList.add('opacity-100');
       } else {

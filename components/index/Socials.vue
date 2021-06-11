@@ -14,7 +14,7 @@
 export default {  
   data() {
     return {
-      background : require('~/assets/images/hoodie.jpg'),
+      background : require('~/assets/images/socials-bg.jpg'),
     }
   },
   methods: {

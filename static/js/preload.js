@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
-    document.querySelector("body").classList.remove("preload");
+    document.querySelectorAll(".preload").forEach(item => {
+      item.classList.remove("preload");
+    });
   }, 600);
 });
