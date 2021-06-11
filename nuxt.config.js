@@ -42,11 +42,6 @@ export default {
         crossorigin: "anonymous",
         referrerpolicy: "no-referrer"
       }
-    ],
-    script: [
-      {
-        src: "js/preload.js"
-      }
     ]
   },
   /*
