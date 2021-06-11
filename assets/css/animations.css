@@ -5,29 +5,81 @@
 }
 
 @keyframes open {
-  0% { opacity: 0%; width: 0vw; background-color: #00ffae; }
-  5% { opacity: 0%; width: 50vw; background-color: #09c388; }
-  15% { opacity: 100%; width: 100vw; height: 2px; background-color: #60caa9; }
-  75% { opacity: 100%; width: 100vw; height: 7px; background-color: #2a2e38; }
-  100% { opacity: 100%; width: 100vw; height: 50vh; background: #2a2e38; }
+  0% { opacity: 0%; width: 0vw; }
+  5% { opacity: 0%; width: 50vw; }
+  15% { opacity: 100%; width: 100vw; height: 2px; }
+  75% { opacity: 100%; width: 100vw; height: 7px; }
+  100% { opacity: 100%; width: 100vw; height: 50vh }
 }
 
 @keyframes close {
-  0% { opacity: 100%; width: 100vw; height: 50vh; background: #2a2e38; }
-  75% { opacity: 100%; width: 100vw; height: 0; background: #2a2e38; }
+  0% { opacity: 100%; width: 100vw; height: 50vh; }
+  75% { opacity: 100%; width: 100vw; height: 0; }
   100% { opacity: 0%; width: 0vw; height: 0; }
 }
 
 @keyframes shine-left {
-  0% { opacity: 10%; background-color: #00ffae; filter: blur(30px); }
-  10% { opacity: 100%; width: 300px; background-color: #00ffae; z-index: 99; }
-  100% { opacity: 70%; transform: translateX(-50vw); }
+  0% { opacity: 10%; background-color: #c9fded; }
+  5% { opacity: 50%; background-color: #c9fded; }
+
+  15% { 
+    opacity: 80%; 
+    width: 50vw; 
+    background-color: #02b87e; 
+    z-index: 99; filter: brightness(200%) saturate(150%) hue-rotate(-0.12turn); 
+  }
+
+  50% { 
+    box-shadow: -1px 0px 17px 7px rgba(2,184,126,1);
+    opacity: 100%; 
+    width: 15vw; 
+    background-color: #02b87e; 
+    z-index: 99; 
+    filter: brightness(200%) saturate(150%) hue-rotate(-0.12turn); 
+  }
+
+  90% { 
+    box-shadow: -1px 0px 3px 3px rgba(2,184,126,1);
+    opacity: 100%; 
+    width: 2px; 
+    background-color: #00ffb3; 
+    filter: blur(1px); 
+    z-index: 99; 
+  }
+
+  100% { opacity: 10%; transform: translateX(-50vw); }
 }
 
 @keyframes shine-right {
-  0% { opacity: 10%; background-color: #00ffae; filter: blur(30px); }
-  10% { opacity: 100%; width: 300px; background-color: #00ffae; z-index: 99; }
-  100% { opacity: 70%; transform: translateX(50vw); }
+  0% { opacity: 10%; background-color: #c9fded; }
+  5% { opacity: 50%; background-color: #c9fded; }
+
+  15% { 
+    opacity: 80%; 
+    width: 50vw; 
+    background-color: #02b87e; 
+    z-index: 99; filter: brightness(200%) saturate(150%) hue-rotate(-0.12turn); 
+  }
+
+  50% { 
+    box-shadow: -1px 0px 17px 7px rgba(2,184,126,1);
+    opacity: 100%; 
+    width: 15vw; 
+    background-color: #02b87e; 
+    z-index: 99; 
+    filter: brightness(200%) saturate(150%) hue-rotate(-0.12turn); 
+  }
+
+  90% { 
+    box-shadow: -1px 0px 3px 1px rgba(2,184,126,1);
+    opacity: 100%; 
+    width: 2px; 
+    background-color: #00ffb3; 
+    filter: blur(1px); 
+    z-index: 99; 
+  }
+
+  100% { opacity: 10%; transform: translateX(50vw); }
 }
 
 @keyframes appear {
