@@ -7,7 +7,9 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <IndexContact :class="opened ? 'opened' : 'closed'" />
+      <div class="preload" ref="preload">
+        <IndexContact :class="opened ? 'opened' : 'closed'" />
+      </div>
     </div>
   </div>
 </template>
@@ -39,10 +41,14 @@ export default {
       this.form = this.$vnode.elm.querySelector('form');
       this.labels = this.$vnode.elm.querySelectorAll('label');
       this.contact_button = this.$vnode.elm.querySelector('#contact-button')
+    },
+    clear_preload() {
+      this.$refs.preload.classList.remove('preload')
     }
   },
   mounted() {
     this.setup();
+    setTimeout(this.clear_preload, 1000)
   }
 }
 </script>

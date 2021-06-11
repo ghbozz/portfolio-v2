@@ -1,4 +1,13 @@
 .nav-item {
-  @apply mx-2 inline-block font-normal uppercase text-primary-green cursor-pointer hover:bg-primary-green hover:text-primary-dark;
+  @apply mx-2 inline-block font-normal uppercase;
+}
+
+.nav-item a {
+  @apply text-primary-green cursor-pointer hover:bg-primary-green hover:text-primary-dark;
   padding: 0 0.2rem 0 0.2rem;
+}
+
+.nuxt-link-exact-active {
+  @apply cursor-pointer bg-primary-green duration-200;
+  color: #22262f !important;
 }
