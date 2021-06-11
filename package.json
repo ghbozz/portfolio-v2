@@ -8,7 +8,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "bgd": "yarn build && yarn generate && yarn deploy"
+    "gd": "yarn generate && yarn deploy"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",

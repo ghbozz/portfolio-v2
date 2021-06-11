@@ -1,4 +1,4 @@
-/* ANIMATIONS */
+ANIMATIONS
 @keyframes soft-blink {
   0% { opacity: 0%; }
   100% { opacity: 80%; }
@@ -81,12 +81,6 @@
 
   100% { opacity: 10%; transform: translateX(50vw); }
 }
-
-@keyframes appear {
-  0% { opacity: 0 !important; }
-  90% { opacity: 0 !important; }
-  100% { opacity: 1 !important; }
-} 
 
 /*-SLIDE */
 .up-slide-enter-active {
