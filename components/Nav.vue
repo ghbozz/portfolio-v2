@@ -1,7 +1,12 @@
 <template>
-  <div class="w-screen flex items-center justify-center md:justify-between fixed top-0 px-12 h-16">
-    <NuxtLink to="/">
-      <img id="logo" :src="logo" alt="">
+  <div class="w-screen flex items-center justify-center md:justify-between fixed top-0 px-12 h-24"
+       :class="$nuxt.$route.path == '/' ? 'flex-row-reverse' : 'flex-row'">
+
+    <NuxtLink to="/" 
+              v-if="$nuxt.$route.path !== '/'"
+              :class="'text-2xl'">
+
+      <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1">.dev</span>
     </NuxtLink>
     <ul>
       <li class="nav-item"><NuxtLink to="/portfolio">portfolio</NuxtLink></li>
