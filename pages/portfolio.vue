@@ -45,6 +45,7 @@ export default {
     select(id) {
       this.selected = this.works.find(work => work.id === id)
       const preview = this.$children.find(item => item._name === '<PortfolioPreview>')
+      console.log(this.$children)
       preview.$vnode.key = preview.$vnode.key++ || 1
     }
   }
