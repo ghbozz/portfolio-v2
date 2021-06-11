@@ -9,6 +9,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: "static",
+  // Router
+  router: {
+    base: process.env.NODE_ENV === "production" ? "/portfolio-v2/" : "/"
+  },
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
