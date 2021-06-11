@@ -1,6 +1,6 @@
 <template>
   <transition name="up-slide" mode="out-in" appear>
-    <div class="w-full h-full text-primary-light mr-2 overflow-y-scroll overflow-x-hidden rounded-lg shadow-lg relative">
+    <div class="w-full h-full text-primary-light mr-2 overflow-y-scroll overflow-x-hidden rounded-lg shadow-lg relative glass">
       <a :href="work.url" target="_blank">
         <i class="fas fa-external-link-alt text-secondary-light hover:text-primary-light duration-200"></i>
       </a>

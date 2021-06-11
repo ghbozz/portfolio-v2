@@ -44,3 +44,8 @@ body {
 .min-h-container {
   height: calc(100vh - 64px);
 }
+
+.glass {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -2,7 +2,6 @@
   <div>
     <Nav />
     <Nuxt /> 
-    <Breakpoints />
   </div>
 </template>
 

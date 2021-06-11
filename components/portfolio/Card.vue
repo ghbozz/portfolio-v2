@@ -1,10 +1,12 @@
 <template>
   <transition name="side-slide" mode="out-in" appear>
     <div @click="click" 
-         :class="[{ active: active }, `work-card-${work.id}`, 'work-card w-full']"
+         :class="[{ active: active }, `work-card-${work.id}`, 'work-card w-full glass']"
          :style="`transition-delay: 0.${work.id * 3}s;`">
          
-      <img class="h-28 w-28" :src="logo()" alt="">
+      <img :src="logo()" 
+           alt="">
+
       <div class="w-2/3 p-4">
         <p class="text-secondary-grey font-semibold opacity-80">{{ work.date }}</p>
         <h3 class="font-semibold text-2xl">{{ work.title }}</h3>

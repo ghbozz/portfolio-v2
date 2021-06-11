@@ -1,9 +1,11 @@
 <template>
   <div class="w-full h-full bg-primary-dark">
     <div class="container mx-auto h-screen flex items-center justify-center flex-col">
-      <h1 class="text-5xl md:text-7xl mb-4">
-        <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1">.dev</span>
-      </h1>
+      <transition name="up-slide" mode="out-in" appear>
+        <h1 class="text-5xl md:text-7xl mb-4">
+          <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1 glow">.dev</span>
+        </h1>
+      </transition>
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
@@ -48,7 +50,7 @@ export default {
   },
   mounted() {
     this.setup();
-    setTimeout(this.clear_preload, 1000)
+    setTimeout(this.clear_preload, 800)
   }
 }
 </script>
