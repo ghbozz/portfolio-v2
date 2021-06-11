@@ -7,7 +7,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "bgd": "yarn build && yarn generate && yarn deploy"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -16,8 +17,6 @@
     "push-dir": "^0.4.1"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^4.1.3",
-    "node-sass": "^6.0.0",
-    "sass-loader": "^12.0.0"
+    "@nuxtjs/tailwindcss": "^4.1.3"
   }
 }
