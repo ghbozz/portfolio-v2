@@ -8,14 +8,23 @@ button:focus {
 }
 
 .main-btn {
-  @apply text-3xl uppercase cursor-pointer text-primary-green duration-200 hover:bg-primary-green hover:text-primary-dark;
   line-height: 1.75rem;
+  font-size: 1.875rem;
   padding: 0 0.2rem 0 0.2rem;
   z-index: 99;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #05a672;
+  transition-duration: 200ms;
+}
+
+.main-btn:hover {
+  background-color: #05a672;
+  color: black;
 }
 
 .main-btn:hover::before {
-  @apply bg-primary-green;
+  background-color: #05a672;
   content: "";
   position: absolute;
   top: 0;
@@ -33,7 +42,7 @@ button:focus {
 }
 
 .vim-mode::after {
-  @apply bg-primary-green;
+  background-color: #05a672;
   content: "";
   position: absolute;
   transform: translate(50%, -50%);

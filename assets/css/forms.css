@@ -1,31 +1,35 @@
 /* FORMS */
 label {
-  @apply mb-1;
+  margin-bottom: 0.25rem;
   text-transform: uppercase;
   width: fit-content;
   padding: 0 0.2rem 0 0.2rem;
 }
 
 label.active {
-  @apply bg-primary-green text-primary-dark;
+  background-color: rgba(5, 166, 114);
+  color: rgba(34, 38, 47);
 }
 
 input[type="text"],
 textarea {
-  @apply mb-2 bg-primary-dark border-primary-grey border-2 border-opacity-10 focus:border-opacity-50 focus:outline-none focus:border-primary-green;
   text-indent: 10px;
+  margin-bottom: 0.5rem;
+  background-color: rgba(34, 38, 47);
+  border-color: rgba(178, 185, 183);
+  border-width: 2px;
+  margin-bottom: 0.5rem;
 }
 
 input[type="text"] {
-  @apply h-12;
+  height: 3rem;
 }
 
 textarea {
-  @apply h-24;
+  height: 6rem;
   resize: none;
 }
 
 input[type="submit"] {
-  @apply main-btn;
   background: transparent;
 }
