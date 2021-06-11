@@ -37,5 +37,8 @@ module.exports = {
       "plugins/**/*.js",
       "nuxt.config.js"
     ]
+  },
+  purgeCSS: {
+    whitelistPatterns: [/^ct/]
   }
 };
