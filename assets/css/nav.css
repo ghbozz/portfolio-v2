@@ -1,13 +1,25 @@
 .nav-item {
-  @apply mx-2 inline-block font-normal uppercase;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .nav-item a {
-  @apply text-primary-green cursor-pointer hover:bg-primary-green hover:text-primary-dark;
   padding: 0 0.2rem 0 0.2rem;
+  color: rgba(5, 166, 114);
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  background-color: rgba(5, 166, 114);
+  color: rgba(34, 38, 47);
 }
 
 .nuxt-link-exact-active {
-  @apply cursor-pointer bg-primary-green duration-200;
   color: #22262f !important;
+  cursor: pointer;
+  background-color: rgba(5, 166, 114);
+  transition-duration: 200ms;
 }

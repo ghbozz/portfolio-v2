@@ -8,7 +8,8 @@ body {
 }
 
 .preload {
-  @apply h-0 overflow-hidden;
+  height: 0px;
+  overflow: hidden;
 }
 
 /* VIEW PORT */
