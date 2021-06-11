@@ -3,6 +3,7 @@
     <div @click="click" 
          :class="[{ active: active }, `work-card-${work.id}`, 'work-card w-full']"
          :style="`transition-delay: 0.${work.id * 3}s;`">
+         
       <img class="h-28 w-28" :src="logo()" alt="">
       <div class="w-2/3 p-4">
         <p class="text-secondary-grey font-semibold opacity-80">{{ work.date }}</p>

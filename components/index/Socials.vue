@@ -42,10 +42,22 @@ export default {
     left: 50%;
   }
 
-  i {
+  #socials i {
     z-index: 99;
     margin-left: 1rem;
     margin-right: 1rem;
+    transition-delay: 1.2s;
+    transition-duration: .8s;
+    transition-property: opacity;
+  }
+
+  .closed i {
+    transition: opacity .2s ease !important;
+    opacity: 0;
+  }
+
+  .opened i {
+    opacity: 1;
   }
 
   img {
@@ -55,6 +67,5 @@ export default {
     bottom: 0;
     left: 0;
     object-fit: cover;
-    /* filter: brightness(80%) saturate(100%) opacity(100%) contrast(50%); */
   }
 </style>

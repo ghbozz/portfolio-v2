@@ -20,7 +20,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
   #form-wrapper {
     background: #2a2e38;
   }

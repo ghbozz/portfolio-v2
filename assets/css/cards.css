@@ -1,9 +1,9 @@
 .work-card {
-  @apply bg-secondary-dark rounded-lg flex items-center justify-around p-4 cursor-pointer border-2 border-secondary-grey border-opacity-10 hover:border-opacity-50 hover:border-primary-green;
+  @apply bg-secondary-dark rounded-lg flex items-center justify-around p-4 cursor-pointer duration-300;
 }
 
 .work-card.active {
-  @apply border-2 border-secondary-light border-opacity-5 shadow-lg;
+  @apply ring-4 ring-primary-light ring-opacity-10 shadow-lg;
 }
 
 .work-card.active img {
@@ -13,4 +13,5 @@
 .work-card.active img {
   @apply shadow-lg border-2 border-primary-green border-opacity-75;
   transform: scale(1.05);
+  box-shadow: -1px 0px 17px 7px rgba(2, 184, 126, 0.2);
 }
