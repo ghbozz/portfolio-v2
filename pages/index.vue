@@ -32,16 +32,16 @@ export default {
 
       if (this.opened) {
         document.querySelector('#contact-button').classList.add('active');
-        document.querySelector('form').classList.add('opacity-100');
-      } else {
-        document.querySelector('#contact-button').classList.remove('active');
-        document.querySelector('form').classList.remove('opacity-100');
-
-        document.querySelectorAll('label').forEach((label) => {
-          label.classList.remove('active');
-        })
+        return
       }
+      document.querySelector('#contact-button').classList.remove('active');
+      this.clear_labels();
     },
+    clear_labels() {
+      document.querySelectorAll('label').forEach((label) => {
+        label.classList.remove('active');
+      })
+    }
   },
   mounted() {
     this.preload(1000);

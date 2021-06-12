@@ -6,10 +6,8 @@ export default {
     },
     clear_preloads(items = false) {
       if (items) {
-        console.log(items);
         items.forEach(item => this.remove_preload(item));
       } else {
-        console.log("no items");
         document.querySelectorAll(".preload").forEach(item => {
           this.remove_preload(item);
         });
