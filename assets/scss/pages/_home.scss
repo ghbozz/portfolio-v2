@@ -22,7 +22,7 @@
   }
 
   .closed {
-    animation: close 1s ease-out forwards;
+    animation: close 1s ease-in-out forwards;
 
     i {
       transition: opacity 0.2s ease !important;
@@ -31,7 +31,7 @@
   }
 
   .opened {
-    animation: open 1s ease-out forwards;
+    animation: open 1s ease-in-out forwards;
 
     &::before,
     &::after {

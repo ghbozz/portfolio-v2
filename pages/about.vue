@@ -19,8 +19,4 @@ export default {
 </script>
 
 <style lang="scss">
-  #about {
-    background-size: cover;
-    background-position: center;
-  }
 </style>
