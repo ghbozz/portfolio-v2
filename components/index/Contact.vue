@@ -6,6 +6,8 @@
     <div id="socials-wrapper" class="w-full h-full md:w-1/2 flex items-center justify-center relative md:py-0">
       <IndexSocials />
     </div>
+    <span id="before"></span>
+    <span id="after"></span>
   </div>
 </template>
 

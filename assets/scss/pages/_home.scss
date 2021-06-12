@@ -13,21 +13,20 @@
   .opened {
     animation: open 1s ease-out forwards;
 
-    &:before,
-    &:after {
+    #before,
+    #after {
       position: absolute;
       display: inline-block;
-      content: "";
       width: 2px;
       height: 2px;
       z-index: 999;
     }
 
-    &:before {
+    #before {
       animation: shineleft 0.5s forwards;
     }
 
-    &:after {
+    #after {
       animation: shineright 0.5s forwards;
     }
   }
