@@ -16,56 +16,9 @@ export default {
     return {
       background : require('~/assets/images/socials-bg.jpg'),
     }
-  },
-  methods: {
-    // WIP
-    toggle_socials() {
-      console.log('toggle socials')
-    },
-    toggle_image() {
-      console.log('toggle hoodie')
-    }
-    // WIP
   }
 }
 </script>
 
-<style scoped>
-  #social {
-    background-size: cover;
-    background-position: center;
-  }
-
-  #socials {
-    transform: translate(-50%, -50%);
-    top: 20%;
-    left: 50%;
-  }
-
-  #socials i {
-    z-index: 99;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    transition-delay: 1.2s;
-    transition-duration: .8s;
-    transition-property: opacity;
-  }
-
-  .closed i {
-    transition: opacity .2s ease !important;
-    opacity: 0;
-  }
-
-  .opened i {
-    opacity: 1;
-  }
-
-  img {
-    width: 140%;
-    height: 140%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    object-fit: cover;
-  }
+<style scoped lang="scss">
 </style>

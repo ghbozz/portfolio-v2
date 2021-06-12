@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss"> 
+<style lang="scss"> 
   #breakpoints {
     transform: translateX(-50%);
     left: 50%;

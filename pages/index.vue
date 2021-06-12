@@ -9,9 +9,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <div class="preload" ref="preload">
-        <IndexContact :class="opened ? 'opened' : 'closed'" />
-      </div>
+      <IndexContact :class="opened ? 'opened' : 'closed'" />
     </div>
   </div>
 </template>
@@ -39,16 +37,15 @@ export default {
         })
       }
     },
-    clear_preload() {
-      this.$refs.preload.classList.remove('preload')
-    }
+    // clear_preload() {
+    //   this.$refs.preload.classList.remove('preload')
+    // }
   },
-  mounted() {
-    setTimeout(this.clear_preload, 800)
-  }
+  // mounted() {
+  //   setTimeout(this.clear_preload, 800)
+  // }
 }
 </script>
 
-<style scoped lang="scss">
-
+<style lang="scss">
 </style>

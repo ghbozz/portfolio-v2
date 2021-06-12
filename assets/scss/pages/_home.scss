@@ -1,0 +1,59 @@
+#contact {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  #form-wrapper {
+    background: $secondary-dark;
+  }
+
+  .closed {
+    animation: close 1s ease-out forwards;
+
+    i {
+      transition: opacity 0.2s ease !important;
+      opacity: 0;
+    }
+  }
+
+  .opened {
+    animation: open 1s ease-out forwards;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 2px;
+      z-index: 999;
+    }
+
+    &::before {
+      animation: shine-left 0.5s forwards;
+    }
+
+    &::after {
+      animation: shine-right 0.5s forwards;
+    }
+  }
+
+  #social {
+    background-size: cover;
+    background-position: center;
+
+    #socials {
+      transform: translate(-50%, -50%);
+      top: 20%;
+      left: 50%;
+
+      i {
+        opacity: 1;
+        z-index: 99;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        transition-delay: 1.2s;
+        transition-duration: 0.8s;
+        transition-property: opacity;
+      }
+    }
+  }
+}
