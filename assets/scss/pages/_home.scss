@@ -1,6 +1,5 @@
 #contact {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  overflow: hidden;
 
   #form-wrapper {
     background: $secondary-dark;
@@ -42,7 +41,7 @@
 
     #socials {
       transform: translate(-50%, -50%);
-      top: 20%;
+      top: 15%;
       left: 50%;
 
       i {

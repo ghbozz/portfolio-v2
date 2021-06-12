@@ -10,21 +10,18 @@
 @keyframes open {
   0% {
     opacity: 0%;
-    width: 0vw;
-  }
-  5% {
-    opacity: 0%;
-    width: 50vw;
+    width: 100vw;
+    height: 0vh;
   }
   15% {
     opacity: 100%;
     width: 100vw;
-    height: 2px;
+    height: 0vh;
   }
   75% {
     opacity: 100%;
     width: 100vw;
-    height: 7px;
+    height: 0vh;
   }
   100% {
     opacity: 100%;
@@ -42,12 +39,12 @@
   75% {
     opacity: 100%;
     width: 100vw;
-    height: 0;
+    height: 0vh;
   }
   100% {
     opacity: 0%;
     width: 0vw;
-    height: 0;
+    height: 0vh;
   }
 }
 
