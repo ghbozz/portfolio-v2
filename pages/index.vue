@@ -44,7 +44,7 @@ export default {
     }
   },
   mounted() {
-    this.clear_preload();
+    setTimeout(this.clear_preload, 800)
   }
 }
 </script>
