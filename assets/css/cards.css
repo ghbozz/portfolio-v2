@@ -1,10 +1,21 @@
 .work-card {
-  @apply bg-secondary-dark rounded-lg flex items-center justify-around p-4 cursor-pointer duration-300 overflow-hidden relative shadow-lg;
   z-index: 1;
+  background-color: rgba(37, 43, 53);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  cursor: pointer;
+  transition-duration: 300ms;
+  overflow: hidden;
+  position: relative;
 }
 
 .work-card::before {
-  @apply bg-primary-green h-96 w-96;
+  background-color: rgba(5, 166, 114);
+  height: 24rem;
+  width: 24rem;
   content: "";
   position: absolute;
   top: 50%;
@@ -17,7 +28,9 @@
 }
 
 .work-card img {
-  @apply h-28 w-28 relative;
+  height: 7rem;
+  width: 7rem;
+  position: relative;
 }
 
 .work-card.active {
@@ -28,9 +41,5 @@
 }
 
 .work-card.active img {
-  @apply duration-500;
-}
-
-.work-card.active img {
-  @apply shadow-lg;
+  transition-duration: 500ms;
 }

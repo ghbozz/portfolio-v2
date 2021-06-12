@@ -2,14 +2,3 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
-/* UTILITIES */
-@import "~/assets/css/utilities";
-@import "~/assets/css/fonts";
-@import "~/assets/css/buttons";
-@import "~/assets/css/animations";
-@import "~/assets/css/icons";
-@import "~/assets/css/forms";
-@import "~/assets/css/nav";
-@import "~/assets/css/cards";
-@import "~/assets/css/scroller";
