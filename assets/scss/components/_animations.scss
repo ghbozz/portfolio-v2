@@ -9,22 +9,18 @@
 
 @keyframes open {
   0% {
-    opacity: 0%;
     width: 100vw;
     height: 0vh;
   }
   15% {
-    opacity: 100%;
     width: 100vw;
     height: 0vh;
   }
   75% {
-    opacity: 100%;
     width: 100vw;
     height: 0vh;
   }
   100% {
-    opacity: 100%;
     width: 100vw;
     height: 50vh;
   }
@@ -32,12 +28,10 @@
 
 @keyframes close {
   0% {
-    opacity: 100%;
     width: 100vw;
     height: 50vh;
   }
   100% {
-    opacity: 0%;
     width: 100vw;
     height: 0vh;
   }
