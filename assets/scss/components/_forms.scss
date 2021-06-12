@@ -1,14 +1,14 @@
 /* FORMS */
 label {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
   width: fit-content;
   padding: 0 0.2rem 0 0.2rem;
 }
 
 label.active {
-  background-color: rgb(5, 166, 114);
-  color: rgb(34, 38, 47);
+  background-color: $primary-green;
+  color: $primary-dark;
 }
 
 input[type="text"],
@@ -19,6 +19,12 @@ textarea {
   border-color: $primary-gray;
   border-width: 2px;
   margin-bottom: 0.5rem;
+  outline: none !important;
+  border: none;
+
+  &:focus {
+    outline: none !important;
+  }
 }
 
 input[type="text"] {

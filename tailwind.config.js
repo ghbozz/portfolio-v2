@@ -9,7 +9,7 @@ module.exports = {
     extend: {},
     colors: {
       "primary-dark": "#22262f",
-      "secondary-dark": "#252b35",
+      "secondary-dark": "#2c343d",
       "primary-light": "#ebf4f1",
       "secondary-light": "#d7e0dd",
       "primary-gray": "#b2b9b7",
@@ -28,7 +28,6 @@ module.exports = {
   variants: {},
   plugins: [],
   purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === "production",
     content: [
       "components/**/*.vue",

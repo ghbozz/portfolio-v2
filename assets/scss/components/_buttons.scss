@@ -20,7 +20,7 @@ button:focus {
 
 .main-btn:hover {
   background-color: $primary-green;
-  color: black;
+  color: $primary-dark;
 }
 
 .main-btn:hover::before {
