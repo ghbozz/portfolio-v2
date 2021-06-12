@@ -9,7 +9,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <div class="preload" ref="preload">
+      <div ref="preload">
         <IndexContact :class="opened ? 'opened' : 'closed'" />
       </div>
     </div>
