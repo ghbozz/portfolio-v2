@@ -36,6 +36,10 @@ button:focus {
   z-index: -1;
 }
 
+.vim-mode {
+  position: relative;
+}
+
 .vim-mode.active::after,
 .vim-mode:hover::after {
   display: block !important;
