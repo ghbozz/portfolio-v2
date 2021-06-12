@@ -12,7 +12,6 @@ label.active {
 
 input[type="text"],
 textarea {
-  text-indent: 10px;
   margin-bottom: 0.5rem;
   background-color: $primary-dark;
   border-color: $primary-gray;
@@ -28,10 +27,12 @@ textarea {
 
 input[type="text"] {
   height: 3rem;
+  text-indent: 10px;
 }
 
 textarea {
   height: 6rem;
+  padding: 0.5rem;
   resize: none;
 }
 
