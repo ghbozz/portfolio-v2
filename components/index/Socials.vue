@@ -1,8 +1,8 @@
 <template>
-  <div id="social" class="h-full w-full duration-2000"
+  <div id="socials" class="h-full w-full duration-2000 relative"
        :style="{ backgroundImage: 'url(' + background + ')' }">
 
-    <div id="socials" class="absolute">
+    <div id="icons" class="absolute">
       <i class="fab fa-github social-icon"></i>
       <i class="fab fa-linkedin-in social-icon"></i>
       <i class="fas fa-at social-icon"></i>
