@@ -6,9 +6,10 @@ body {
   background: $primary-dark;
 }
 
-.preload {
-  height: 0px;
-  overflow: hidden;
+.preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition: all 0s !important;
 }
 
 .h-screen-50 {

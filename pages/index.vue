@@ -9,7 +9,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <div id="contact">
+      <div id="contact" class="preload">
         <IndexContact :class="opened ? 'opened' : 'closed'" />
       </div>
     </div>
@@ -17,12 +17,15 @@
 </template>
 
 <script>
+import utilities from '~/javascript/mixins/utilities'
+
 export default {
   data() {
     return {
       opened: false
     }
   },
+  mixins: [ utilities ],
   methods: {
     toggle_contact() {
       this.opened = !this.opened;
@@ -39,6 +42,9 @@ export default {
         })
       }
     },
+  },
+  mounted() {
+    this.preload(1000);
   }
 }
 </script>
