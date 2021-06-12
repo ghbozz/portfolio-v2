@@ -35,6 +35,7 @@
 
     &::before,
     &::after {
+      background-color: $primary-green;
       position: absolute;
       display: inline-block;
       content: "";

@@ -43,6 +43,7 @@ button:focus {
 .vim-mode.active:after,
 .vim-mode:hover::after {
   display: inline-block;
+  background-color: $primary-green;
 }
 
 .vim-mode::after {
