@@ -1,4 +1,7 @@
-@import "./variables";
+// variables
+@import "./colors";
+
+// components
 @import "./components/animations";
 @import "./components/buttons";
 @import "./components/cards";
@@ -9,4 +12,5 @@
 @import "./components/scroller";
 @import "./components/utilities";
 
+// pages
 @import "./pages/home";
