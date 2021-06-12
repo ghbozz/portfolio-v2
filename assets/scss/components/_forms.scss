@@ -7,16 +7,16 @@ label {
 }
 
 label.active {
-  background-color: rgba(5, 166, 114);
-  color: rgba(34, 38, 47);
+  background-color: rgb(5, 166, 114);
+  color: rgb(34, 38, 47);
 }
 
 input[type="text"],
 textarea {
   text-indent: 10px;
   margin-bottom: 0.5rem;
-  background-color: rgba(34, 38, 47);
-  border-color: rgba(178, 185, 183);
+  background-color: rgb(34, 38, 47);
+  border-color: rgb(178, 185, 183);
   border-width: 2px;
   margin-bottom: 0.5rem;
 }

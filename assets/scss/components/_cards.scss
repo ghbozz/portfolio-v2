@@ -1,6 +1,6 @@
 .work-card {
   z-index: 1;
-  background-color: rgba(37, 43, 53);
+  background-color: rgb(37, 43, 53);
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .work-card::before {
-  background-color: rgba(5, 166, 114);
+  background-color: rgb(5, 166, 114);
   height: 24rem;
   width: 24rem;
   content: "";
