@@ -9,11 +9,11 @@ module.exports = {
     extend: {},
     colors: {
       "primary-dark": "#22262f",
-      "secondary-dark": "#252B35",
+      "secondary-dark": "#252b35",
       "primary-light": "#ebf4f1",
       "secondary-light": "#d7e0dd",
-      "primary-grey": "#b2b9b7",
-      "secondary-grey": "#767a79",
+      "primary-gray": "#b2b9b7",
+      "secondary-gray": "#767a79",
       "primary-green": "#05a672"
     },
     container: {

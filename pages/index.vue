@@ -9,7 +9,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <div ref="preload">
+      <div class="preload" ref="preload">
         <IndexContact :class="opened ? 'opened' : 'closed'" />
       </div>
     </div>
@@ -23,28 +23,28 @@ export default {
       opened: false
     }
   },
-  // methods: {
-  //   toggle_contact() {
-  //     this.opened = !this.opened;
+  methods: {
+    toggle_contact() {
+      this.opened = !this.opened;
 
-  //     if (this.opened) {
-  //       document.querySelector('#contact-button').classList.add('active');
-  //       document.querySelector('form').classList.add('opacity-100');
-  //     } else {
-  //       document.querySelector('#contact-button').classList.remove('active');
-  //       document.querySelector('form').classList.remove('opacity-100');
+      if (this.opened) {
+        document.querySelector('#contact-button').classList.add('active');
+        document.querySelector('form').classList.add('opacity-100');
+      } else {
+        document.querySelector('#contact-button').classList.remove('active');
+        document.querySelector('form').classList.remove('opacity-100');
 
-  //       document.querySelectorAll('label').forEach((label) => {
-  //         label.classList.remove('active');
-  //       })
-  //     }
-  //   },
-  //   clear_preload() {
-  //     this.$refs.preload.classList.remove('preload')
-  //   }
-  // },
-  // mounted() {
-  //   setTimeout(this.clear_preload, 800)
-  // }
+        document.querySelectorAll('label').forEach((label) => {
+          label.classList.remove('active');
+        })
+      }
+    },
+    clear_preload() {
+      this.$refs.preload.classList.remove('preload')
+    }
+  },
+  mounted() {
+    setTimeout(this.clear_preload, 800)
+  }
 }
 </script>

@@ -27,7 +27,7 @@
   animation: glow 3s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 1px rgba(1, 167, 114, 0.1), 0 0 2px rgba(1, 167, 114, 0.1),
       0 0 3px rgba(1, 167, 114, 0.1), 0 0 4px rgba(1, 167, 114, 0.15),

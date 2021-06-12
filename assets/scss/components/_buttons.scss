@@ -14,17 +14,17 @@ button:focus {
   z-index: 99;
   text-transform: uppercase;
   cursor: pointer;
-  color: #05a672;
+  color: $primary-green;
   transition-duration: 200ms;
 }
 
 .main-btn:hover {
-  background-color: #05a672;
+  background-color: $primary-green;
   color: black;
 }
 
 .main-btn:hover::before {
-  background-color: #05a672;
+  background-color: $primary-green;
   content: "";
   position: absolute;
   top: 0;
@@ -42,7 +42,7 @@ button:focus {
 }
 
 .vim-mode::after {
-  background-color: #05a672;
+  background-color: $primary-green;
   content: "";
   position: absolute;
   transform: translate(50%, -50%);

@@ -8,18 +8,18 @@
 
 .nav-item a {
   padding: 0 0.2rem 0 0.2rem;
-  color: rgb(5, 166, 114);
+  color: $primary-green;
   cursor: pointer;
 }
 
 .nav-item a:hover {
-  background-color: rgb(5, 166, 114);
-  color: rgb(34, 38, 47);
+  background-color: $primary-green;
+  color: $primary-dark;
 }
 
 .nuxt-link-exact-active {
-  color: #22262f !important;
+  color: $primary-dark !important;
   cursor: pointer;
-  background-color: rgb(5, 166, 114);
+  background-color: $primary-green;
   transition-duration: 200ms;
 }

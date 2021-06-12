@@ -10,10 +10,10 @@
               {{ selected.title }}
           </h2>
         </transition>
-        <span class="text-1xl mr-2 text-secondary-grey uppercase">preview</span>
+        <span class="text-1xl mr-2 text-secondary-gray uppercase">preview</span>
       </div>
       <div class="display hidden xl:block relative">
-        <PortfolioPreview :work="selected" v-if="selected" />
+        <PortfolioPreview id="preview" :work="selected" v-if="selected" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
         <h2 class="uppercase text-4xl">recent works</h2>
@@ -44,8 +44,7 @@ export default {
   methods: {
     select(id) {
       this.selected = this.works.find(work => work.id === id)
-      const preview = this.$children.find(item => item._name === '<PortfolioPreview>')
-      console.log(this.$children)
+      const preview = this.$children.find(item => item.$el.id === 'preview')
       preview.$vnode.key = preview.$vnode.key++ || 1
     }
   }
