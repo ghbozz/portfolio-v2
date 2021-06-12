@@ -16,6 +16,7 @@
     &::before,
     &::after {
       position: absolute;
+      display: inline-block;
       content: "";
       width: 2px;
       height: 2px;
