@@ -23,11 +23,11 @@
     }
 
     &::before {
-      animation: shine-left 0.5s forwards;
+      animation: shineleft 0.5s forwards;
     }
 
     &::after {
-      animation: shine-right 0.5s forwards;
+      animation: shineright 0.5s forwards;
     }
   }
 
