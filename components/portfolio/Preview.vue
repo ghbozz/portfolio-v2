@@ -22,7 +22,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   img {
     width: 100%;
     object-fit: cover;

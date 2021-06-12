@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   img {
     border-radius: 50%;
     object-fit: cover;

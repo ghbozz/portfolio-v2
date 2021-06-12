@@ -20,9 +20,9 @@ export default {
 </script>
 
 
-<style>
+<style scoped lang="scss">
   #form-wrapper {
-    background: #2a2e38;
+    background: $secondary-dark;
   }
 
   .closed {
