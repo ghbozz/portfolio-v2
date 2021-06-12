@@ -23,7 +23,7 @@ button:focus {
   color: $primary-dark;
 }
 
-.main-btn:hover::before {
+.main-btn:hover:before {
   background-color: $primary-green;
   content: "";
   position: absolute;
@@ -40,12 +40,12 @@ button:focus {
   position: relative;
 }
 
-.vim-mode.active::after,
-.vim-mode:hover::after {
+.vim-mode.active:after,
+.vim-mode:hover:after {
   display: inline-block;
 }
 
-.vim-mode::after {
+.vim-mode:after {
   background-color: $primary-green;
   content: "";
   position: absolute;
