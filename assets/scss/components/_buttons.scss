@@ -23,18 +23,18 @@ button:focus {
   color: $primary-dark;
 }
 
-.main-btn:hover::before {
-  background-color: $primary-green;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.2;
-  filter: blur(10px);
-  z-index: -1;
-}
+// .main-btn:hover::before {
+//   background-color: $primary-green;
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   opacity: 0.2;
+//   filter: blur(10px);
+//   z-index: -1;
+// }
 
 .vim-mode {
   position: relative;

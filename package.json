@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "push": "rm -rf dist && nuxt generate && yarn deploy"
+    "push": "rm -rf dist && nuxt generate && yarn deploy",
+    "gcpush": "git add . && git commit -m 'cleanup' && yarn push"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
