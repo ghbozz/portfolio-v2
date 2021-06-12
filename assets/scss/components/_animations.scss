@@ -1,9 +1,9 @@
 @keyframes vim {
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
   100% {
-    opacity: 80%;
+    opacity: 0.8;
   }
 }
 
@@ -39,16 +39,16 @@
 
 @keyframes shine-left {
   0% {
-    opacity: 10%;
+    opacity: 0;
     background-color: #c9fded;
   }
   5% {
-    opacity: 50%;
+    opacity: 0.5;
     background-color: #c9fded;
   }
 
   15% {
-    opacity: 80%;
+    opacity: 0.8;
     width: 50vw;
     background-color: $primary-green;
     z-index: 99;
@@ -57,7 +57,7 @@
 
   50% {
     box-shadow: -1px 0px 17px 7px $primary-green;
-    opacity: 100%;
+    opacity: 1;
     width: 15vw;
     background-color: $primary-green;
     z-index: 99;
@@ -66,7 +66,7 @@
 
   90% {
     box-shadow: -1px 0px 3px 3px $primary-green;
-    opacity: 100%;
+    opacity: 1;
     width: 2px;
     background-color: #00ffb3;
     filter: blur(1px);
@@ -74,23 +74,23 @@
   }
 
   100% {
-    opacity: 10%;
+    opacity: 0.1;
     transform: translateX(-50vw);
   }
 }
 
 @keyframes shine-right {
   0% {
-    opacity: 10%;
+    opacity: 0.1;
     background-color: #c9fded;
   }
   5% {
-    opacity: 50%;
+    opacity: 0.5;
     background-color: #c9fded;
   }
 
   15% {
-    opacity: 80%;
+    opacity: 0.8;
     width: 50vw;
     background-color: $primary-green;
     z-index: 99;
@@ -99,7 +99,7 @@
 
   50% {
     box-shadow: -1px 0px 17px 7px $primary-green;
-    opacity: 100%;
+    opacity: 1;
     width: 15vw;
     background-color: $primary-green;
     z-index: 99;
@@ -108,7 +108,7 @@
 
   90% {
     box-shadow: -1px 0px 3px 1px $primary-green;
-    opacity: 100%;
+    opacity: 1;
     width: 2px;
     background-color: $light-green;
     filter: blur(1px);
@@ -116,7 +116,7 @@
   }
 
   100% {
-    opacity: 10%;
+    opacity: 0.1;
     transform: translateX(50vw);
   }
 }
@@ -125,12 +125,14 @@
 .up-slide-enter-active {
   transition: all 0.8s ease;
 }
+
 .up-slide-leave-active {
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.5s ease;
 }
+
 .up-slide-enter,
 .up-slide-leave-to {
   transform: translateY(10px);
@@ -141,9 +143,11 @@
 .side-slide-enter-active {
   transition: all 1s ease;
 }
+
 .side-slide-leave-active {
   transition: all 1.5s cubic-bezier(1, 0.5, 0.8, 1);
 }
+
 .side-slide-enter,
 .side-slide-leave-to {
   transform: translateX(10px);
