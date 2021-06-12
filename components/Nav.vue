@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   #logo {
     width: 50px;
     height: 50px;

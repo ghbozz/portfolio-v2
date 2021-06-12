@@ -1,0 +1,57 @@
+/* SCROLLER INDICATOR */
+.scroll {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  height: 6.25vmin;
+  width: 3.75vmin;
+  transform: translateX(-50%);
+  bottom: 2.5%;
+  left: 50%;
+}
+
+.scroll:before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 6.25vmin / 20);
+  top: 1.25vmin;
+  height: 0.625vmin;
+  width: 0.625vmin;
+  background: $secondary-light;
+  border-radius: 50%;
+  -webkit-animation: scroll 4s infinite;
+  animation: scroll 4s infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6.25vmin);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6.25vmin);
+  }
+}

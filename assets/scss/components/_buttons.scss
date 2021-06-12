@@ -1,0 +1,55 @@
+/* BUTTONS */
+button {
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.main-btn {
+  line-height: 1.75rem;
+  font-size: 1.875rem;
+  padding: 0 0.2rem 0 0.2rem;
+  z-index: 99;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: $primary-green;
+  transition-duration: 200ms;
+}
+
+.main-btn:hover {
+  background-color: $primary-green;
+  color: black;
+}
+
+.main-btn:hover::before {
+  background-color: $primary-green;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.2;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.vim-mode.active::after,
+.vim-mode:hover::after {
+  display: block !important;
+}
+
+.vim-mode::after {
+  background-color: $primary-green;
+  content: "";
+  position: absolute;
+  transform: translate(50%, -50%);
+  right: -0.75rem;
+  top: 50%;
+  width: 1rem;
+  height: 100%;
+  display: none;
+  animation: soft-blink 1s infinite;
+}

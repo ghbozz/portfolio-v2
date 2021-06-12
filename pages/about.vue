@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
   #about {
     background-size: cover;
     background-position: center;

@@ -1,0 +1,35 @@
+/* FORMS */
+label {
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0 0.2rem 0 0.2rem;
+}
+
+label.active {
+  background-color: rgb(5, 166, 114);
+  color: rgb(34, 38, 47);
+}
+
+input[type="text"],
+textarea {
+  text-indent: 10px;
+  margin-bottom: 0.5rem;
+  background-color: $primary-dark;
+  border-color: $primary-gray;
+  border-width: 2px;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  height: 3rem;
+}
+
+textarea {
+  height: 6rem;
+  resize: none;
+}
+
+input[type="submit"] {
+  background: transparent;
+}

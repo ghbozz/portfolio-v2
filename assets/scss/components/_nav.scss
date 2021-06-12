@@ -1,0 +1,25 @@
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.nav-item a {
+  padding: 0 0.2rem 0 0.2rem;
+  color: $primary-green;
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  background-color: $primary-green;
+  color: $primary-dark;
+}
+
+.nuxt-link-exact-active {
+  color: $primary-dark !important;
+  cursor: pointer;
+  background-color: $primary-green;
+  transition-duration: 200ms;
+}
