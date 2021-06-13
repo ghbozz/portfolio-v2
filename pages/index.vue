@@ -9,7 +9,7 @@
       <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
         contact
       </button>
-      <div id="contact" ref="contact" class="preload">
+      <div id="contact" class="preload">
         <IndexContact :class="opened ? 'opened' : 'closed'" />
       </div>
     </div>
@@ -44,8 +44,6 @@ export default {
     }
   },
   mounted() {
-    console.log('mounted')
-    // this.$refs.contact.classList.add('preload')
     this.preload(1000);
   }
 }
