@@ -9,7 +9,7 @@
       <textarea class="h-48" @focus="focus" name="body"></textarea>
     </div>
     <div class="flex justify-center items-center mt-2">
-      <button class="main-btn relative">
+      <button class="main-btn relative text-3xl">
         send
       </button>
     </div>

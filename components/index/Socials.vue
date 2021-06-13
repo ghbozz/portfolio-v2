@@ -1,6 +1,5 @@
 <template>
-  <div id="socials" class="h-full w-full duration-2000 relative"
-       :style="{ backgroundImage: 'url(' + background + ')' }">
+  <div id="socials" class="h-full w-full duration-2000 relative">
 
     <div id="icons" class="absolute flex items-center justify-center w-full">
       <i class="fab fa-github social-icon"></i>
@@ -11,14 +10,11 @@
 </template>
 
 <script>
-export default {  
-  data() {
-    return {
-      background : require('~/assets/images/socials-bg.jpg'),
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped lang="scss">
+  #socials {
+    background-image: url("~assets/images/mobile-socials-bg.jpg");
+  }
 </style>
