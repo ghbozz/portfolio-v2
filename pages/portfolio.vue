@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-primary-dark mt-12 lg:mt-0 text-primary-light">
+  <div class="w-full mt-12 lg:mt-0 text-primary-light">
     <div class="container mx-auto min-h-container pb-6">
       <div class="display-title hidden xl:flex justify-between items-end">
         <transition name="side-slide" mode="out-in" appear>

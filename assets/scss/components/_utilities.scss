@@ -3,7 +3,12 @@
 }
 
 body {
-  background: $primary-dark;
+  background: rgb(44, 46, 59);
+  background: radial-gradient(
+    circle,
+    rgba(44, 46, 59, 1) 0%,
+    rgba(44, 46, 59, 1) 100%
+  );
 }
 
 .preload * {

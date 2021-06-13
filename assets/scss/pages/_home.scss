@@ -29,6 +29,7 @@
   }
 
   .opened {
+    @apply shadow-inner;
     animation: open 1s ease-in-out forwards;
 
     &::before,

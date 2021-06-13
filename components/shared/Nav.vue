@@ -8,7 +8,7 @@
 
       <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1">.dev</span>
     </NuxtLink>
-    <ul>
+    <ul class="hidden md:flex">
       <li class="nav-item"><NuxtLink to="/portfolio">portfolio</NuxtLink></li>
       <li class="nav-item"><NuxtLink to="/about">about</NuxtLink></li>
     </ul>
