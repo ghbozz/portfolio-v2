@@ -12,7 +12,7 @@
 
         contact
       </button>
-      <div id="contact" class="preload">
+      <div id="contact" :class="'preload'">
         <IndexContact :class="contact ? 'opened' : 'closed'" :ref="'contact'" />
       </div>
     </div>
