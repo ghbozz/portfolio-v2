@@ -3,13 +3,20 @@ works:
     title: params
     description: The fastest way to share your settings and gear with your community.
     date: Nov 2020
-    logo: params-logo.jpg
-    hero: params-home.jpg
+    logo: params/logo.jpg
+    hero: params/home.jpg
     url: https://www.params.gg/
   - id: 2
     title: nostrumcare
     description: L’assurance qui s’adapte au monde d’aujourd’hui.
     date: Mar 2021
-    logo: nostrumcare-logo.jpg
-    hero: nostrumcare-home.jpg
+    logo: nostrumcare/logo.jpg
+    hero: nostrumcare/home.jpg
     url: https://www.nostrumcare.fr/
+  - id: 3
+    title: teacher
+    description: i'm a teacher @lewagon Paris
+    date: Since 2018
+    logo: le_wagon/logo.jpg
+    hero: le_wagon/home.jpg
+    url: https://www.lewagon.com/

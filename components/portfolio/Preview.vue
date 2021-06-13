@@ -15,8 +15,7 @@ export default {
   props: ['work'],
   methods: {
     home() {
-      const directory = this.work.title.toLowerCase().replace(' ', '_')
-      return require(`~/assets/images/works/${directory}/home.jpg`)
+      return require(`~/assets/images/works/${this.work.hero}`)
     }
   }
 }
