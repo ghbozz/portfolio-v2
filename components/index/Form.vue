@@ -1,11 +1,11 @@
 <template>
   <form class="w-10/12 md:w-2/3">
     <div class="flex flex-col text-1xl">
-      <label class="relative" for="email">email</label>
+      <label class="relative vim-mode" for="email">email</label>
       <input @focus="focus" type="text" name="email">
     </div>
     <div class="flex flex-col text-1xl">
-      <label class="relative" for="body">message</label>
+      <label class="relative vim-mode" for="body">message</label>
       <textarea class="h-48" @focus="focus" name="body"></textarea>
     </div>
     <div class="flex justify-center items-center mt-2">
@@ -18,12 +18,26 @@
 
 <script>
 export default {
+  data() {
+    return {
+      labels: null
+    }
+  },
   methods: {
     focus(evt) {
-      document.querySelectorAll('.vim-mode').forEach((item) => item.classList.remove('active'))
-      evt.target.closest('div').querySelector('label').classList.add('vim-mode')
-      evt.target.closest('div').querySelector('label').classList.add('active')
+      document.querySelectorAll('.vim-mode')
+              .forEach((item) => item.classList.remove('active'))
+
+      evt.target.closest('div')
+                .querySelector('label')
+                .classList.add('active')
+    },
+    clear() {
+      this.labels.forEach(label => label.classList.remove('active'))
     }
+  },
+  mounted() {
+    this.labels = this.$el.querySelectorAll('label')
   }
 }
 </script>

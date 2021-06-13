@@ -6,11 +6,14 @@
           <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1 glow">.dev</span>
         </h1>
       </transition>
-      <button @click="toggle_contact" id="contact-button" class="main-btn relative mb-4 vim-mode">
+      <button @click="toggle_contact" 
+              class="main-btn relative mb-4 vim-mode"
+              ref="button">
+
         contact
       </button>
       <div id="contact" class="preload">
-        <IndexContact :class="opened ? 'opened' : 'closed'" />
+        <IndexContact :class="contact ? 'opened' : 'closed'" :ref="'contact'" />
       </div>
     </div>
   </div>
@@ -22,26 +25,22 @@ import utilities from '~/javascript/mixins/utilities'
 export default {
   data() {
     return {
-      opened: false
+      contact: false
     }
   },
   mixins: [ utilities ],
   methods: {
     toggle_contact() {
-      this.opened = !this.opened;
+      this.contact = !this.contact;
 
-      if (this.opened) {
-        document.querySelector('#contact-button').classList.add('active');
+      if (this.contact) {
+        this.$refs.button.classList.add('active');
         return
       }
-      document.querySelector('#contact-button').classList.remove('active');
-      this.clear_labels();
+
+      this.$refs.button.classList.remove('active');
+      this.$refs.contact.close();
     },
-    clear_labels() {
-      document.querySelectorAll('label').forEach((label) => {
-        label.classList.remove('active');
-      })
-    }
   },
   mounted() {
     this.preload(1000);
