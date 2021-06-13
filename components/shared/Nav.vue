@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen flex items-center justify-between fixed top-0 px-12 h-24"
+  <nav class="w-screen flex items-center justify-between fixed top-0 px-12 h-24"
        :class="$nuxt.$route.path == '/' ? 'flex-row-reverse' : 'flex-row'">
 
     <NuxtLink to="/" 
@@ -12,7 +12,7 @@
       <li class="nav-item"><NuxtLink to="/portfolio">portfolio</NuxtLink></li>
       <li class="nav-item"><NuxtLink to="/about">about</NuxtLink></li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <script>

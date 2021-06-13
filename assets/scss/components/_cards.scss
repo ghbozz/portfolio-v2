@@ -33,9 +33,6 @@
   position: relative;
 }
 
-.work-card.active {
-}
-
 .work-card.active::before {
   transform: translate(50%, -50%) scale(1);
 }
