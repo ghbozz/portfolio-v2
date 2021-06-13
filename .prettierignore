@@ -1,2 +1,5 @@
 # Ignored CSS files:
 animations.css
+
+# Ignored JS files:
+utilities.js

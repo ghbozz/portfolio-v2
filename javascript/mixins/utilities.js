@@ -7,16 +7,15 @@ export default {
     clear_preloads(items = false) {
       if (items) {
         items.forEach(item => this.remove_preload(item));
-      } else {
-        document.querySelectorAll(".preload").forEach(item => {
-          this.remove_preload(item);
-        });
+        return
       }
+      
+      document.querySelectorAll(".preload").forEach(item => {
+        this.remove_preload(item);
+      });
     },
     preload(delay, items = false) {
-      setTimeout(() => {
-        this.clear_preloads(items);
-      }, delay);
+      setTimeout(() => { this.clear_preloads(items) }, delay);
     }
     // END PRELOAD
   }
