@@ -12,7 +12,7 @@
 
         contact
       </button>
-      <div id="contact" class="preload">
+      <div id="contact" class="preload" ref="preload">
         <IndexContact :class="contact ? 'opened' : 'closed'" :ref="'contact'" />
       </div>
     </div>
@@ -31,6 +31,7 @@ export default {
   mixins: [ utilities ],
   methods: {
     toggle_contact() {
+      this.$refs.preload.classList.remove('preload');
       this.contact = !this.contact;
 
       if (this.contact) {
@@ -41,10 +42,6 @@ export default {
       this.$refs.button.classList.remove('active');
       this.$refs.contact.close();
     },
-  },
-  mounted() {
-    console.log('mounted')
-    this.preload(1000);
   }
 }
 </script>
