@@ -7,10 +7,19 @@
   );
 }
 
-.dark-break {
+.dark-break-primary {
   background: rgb(44, 46, 59);
   background: linear-gradient(
     130deg,
+    rgba(44, 46, 59, 1) 49%,
+    rgba(41, 42, 52, 1) 49%
+  );
+}
+
+.dark-break-secondary {
+  background: rgb(44, 46, 59);
+  background: linear-gradient(
+    210deg,
     rgba(44, 46, 59, 1) 49%,
     rgba(41, 42, 52, 1) 49%
   );
