@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full bg-primary-dark">
+  <div class="w-full h-full dark-break">
     <div class="container mx-auto h-screen flex items-center justify-center flex-col pt-6 md:pt-0">
       <transition name="up-slide" mode="out-in" appear>
         <h1 class="text-4xl md:text-7xl mb-4">

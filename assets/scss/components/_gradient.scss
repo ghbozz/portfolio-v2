@@ -1,0 +1,26 @@
+.dark-linear {
+  background: rgb(74, 74, 97);
+  background: linear-gradient(
+    0deg,
+    rgba(74, 74, 97, 1) 0%,
+    rgba(56, 57, 73, 1) 100%
+  );
+}
+
+.dark-break {
+  background: rgb(44, 46, 59);
+  background: linear-gradient(
+    130deg,
+    rgba(44, 46, 59, 1) 49%,
+    rgba(41, 42, 52, 1) 49%
+  );
+}
+
+.dark-radial {
+  background: rgb(44, 46, 59);
+  background: radial-gradient(
+    circle,
+    rgba(44, 46, 59, 1) 0%,
+    rgba(44, 46, 59, 1) 100%
+  );
+}
