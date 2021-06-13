@@ -2,7 +2,6 @@
   <div>
     <SharedNav />
     <Nuxt /> 
-    <SharedBreakpoints />
   </div>
 </template>
 

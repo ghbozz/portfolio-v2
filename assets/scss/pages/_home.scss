@@ -1,6 +1,4 @@
 #contact {
-  overflow: hidden;
-
   #socials {
     background-size: cover;
     background-position: center;
@@ -56,6 +54,70 @@
       #icons {
         i {
           opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #contact {
+    #socials {
+      background-size: cover;
+      background-position: center;
+
+      #icons {
+        transform: translate(-50%, -50%);
+        top: 15%;
+        left: 50%;
+
+        i {
+          z-index: 99;
+          margin-left: 1rem;
+          margin-right: 1rem;
+          transition-delay: 1.2s;
+          transition-duration: 0.8s;
+          transition-property: opacity;
+        }
+      }
+    }
+
+    .closed {
+      animation: close-md 1s ease-in-out forwards;
+
+      i {
+        transition: opacity 0.2s ease !important;
+        opacity: 0;
+      }
+    }
+
+    .opened {
+      animation: open-md 1s ease-in-out forwards;
+
+      &::before,
+      &::after {
+        background-color: $primary-green;
+        position: absolute;
+        display: inline-block;
+        content: "";
+        width: 2px;
+        height: 2px;
+        z-index: 999;
+      }
+
+      &::before {
+        animation: shine-left 0.5s forwards;
+      }
+
+      &::after {
+        animation: shine-right 0.5s forwards;
+      }
+
+      #socials {
+        #icons {
+          i {
+            opacity: 1;
+          }
         }
       }
     }

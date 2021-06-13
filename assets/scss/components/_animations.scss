@@ -22,11 +22,41 @@
   }
   100% {
     width: 100vw;
-    height: 50vh;
+    height: calc(100vh - 96px);
   }
 }
 
 @keyframes close {
+  0% {
+    width: 100vw;
+    height: calc(100vh - 96px);
+  }
+  100% {
+    width: 100vw;
+    height: 0vh;
+  }
+}
+
+@keyframes open-md {
+  0% {
+    width: 100vw;
+    height: 0vh;
+  }
+  15% {
+    width: 100vw;
+    height: 0.5vh;
+  }
+  75% {
+    width: 100vw;
+    height: 2vh;
+  }
+  100% {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+@keyframes close-md {
   0% {
     width: 100vw;
     height: 50vh;
