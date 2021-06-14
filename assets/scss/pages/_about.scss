@@ -8,5 +8,7 @@
     filter: brightness(90%) contrast(100%) saturate(145%);
     position: absolute;
     bottom: 0;
+    -webkit-filter: drop-shadow(0px 2px 15px $primary-dark);
+    filter: drop-shadow(0px 2px 15px $primary-dark);
   }
 }
