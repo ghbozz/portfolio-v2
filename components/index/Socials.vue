@@ -2,9 +2,7 @@
   <div id="socials" class="h-full w-full duration-2000 relative">
 
     <div id="icons" class="absolute flex items-center justify-center w-full">
-      <i class="fab fa-github social-icon"></i>
-      <i class="fab fa-linkedin-in social-icon"></i>
-      <i class="fas fa-at social-icon"></i>
+      <IndexIcons />
     </div>
   </div>
 </template>
