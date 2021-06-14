@@ -2,7 +2,7 @@
   <transition name="side-slide" mode="out-in" appear>
     <div @click="click" 
          :class="[{ active: active }, `work-card-${work.id}`, 'work-card w-full glass dark-linear']"
-         :style="`transition-delay: 0.${work.id * 3}s;`">
+         :style="`transition-delay: 0.${work.id * 2}s;`">
          
       <img :src="logo()" alt="">
 

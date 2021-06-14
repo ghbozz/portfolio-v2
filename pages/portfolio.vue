@@ -1,7 +1,7 @@
 <template>
   <div class="w-full mt-12 lg:mt-0 text-primary-light">
     <div class="container mx-auto min-h-container pb-6">
-      <div class="display-title hidden xl:flex justify-between items-end">
+      <div class="display-title hidden lg:flex justify-between items-end">
         <transition name="side-slide" mode="out-in" appear>
           <h2 v-if="selected"
               :key="selected.title"
@@ -12,7 +12,7 @@
         </transition>
         <span class="text-1xl mr-2 text-secondary-gray uppercase">preview</span>
       </div>
-      <div class="display hidden xl:block relative">
+      <div class="display hidden lg:block relative">
         <PortfolioPreview id="preview" :work="selected" v-if="selected" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
@@ -61,7 +61,7 @@ export default {
     grid-row-gap: 10px;
   }
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1024px) {
     .container {
       display: flex;
       align-items: center;

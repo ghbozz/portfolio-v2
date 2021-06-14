@@ -151,7 +151,7 @@
   }
 }
 
-/*-SLIDE */
+/* UP-SLIDE */
 .up-slide-enter-active {
   transition: all 0.8s ease;
 }
@@ -181,5 +181,19 @@
 .side-slide-enter,
 .side-slide-leave-to {
   transform: translateX(10px);
+  opacity: 0;
+}
+
+/* FADE-IN */
+.fade-in-enter-active {
+  transition: all 1s ease;
+}
+
+.fade-in-leave-active {
+  transition: all 1.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.fade-in-enter,
+.fade-in-leave-to {
   opacity: 0;
 }
