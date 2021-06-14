@@ -1,81 +1,21 @@
 <template>
   <div id="about" class="w-full h-full dark-break-secondary relative">
-    <div class="container mx-auto h-screen flex items-center justify-center flex-col">
-      <transition name="up-slide" mode="out-in" appear>
-        <div id="vue" 
-             class="rounded-full w-40 h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
-             style="transition-delay: 0.1s;">
-
-          <img src="~/assets/icons/dev/vue.png" alt="">
-        </div>
-      </transition>
-      <transition name="up-slide" mode="out-in" appear>
-        <div id="ror" 
-                 class="rounded-full w-40 h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
-                 style="transition-delay: 0.3s;">
-
-          <img class="dev-icon" src="~/assets/icons/dev/ruby-flat.png" alt="">
-        </div>
-      </transition>
-      <transition name="up-slide" mode="out-in" appear>
-        <div id="js" 
-             class="rounded-full w-40 h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
-             style="transition-delay: 0.5s;">
-
-          <img class="dev-icon" src="~/assets/icons/dev/javascript.png" alt="">
-        </div>
-      </transition>
-      <transition name="fade-in" mode="out-in" appear>
-        <img id="hoodie" src="~/assets/images/about-bg.jpg" alt="">
-      </transition>
+    <div class="container mx-auto h-screen flex items-center justify-start pt-48 md:pt-0 md:justify-between flex-col md:flex-row">
+      <AboutLeftScene />
+      <div class="text-primary-light w-full md:w-1/2 work-card glass dark-linear flex flex-col">
+        <h2 class="text-3xl md:text-6xl uppercase mb-6 text-left">about me</h2>
+        <p class="text-secondary-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat natus vel rerum at, esse obcaecati ipsam cumque inventore ea modi quisquam blanditiis ullam? Iste similique magnam quaerat nesciunt possimus? Debitis asperiores omnis nam a nihil adipisci quaerat ea. eligendi corporis consequuntur! Libero rem autem aliquam voluptates. Aut, eum accusantium est vel et quaerat explicabo! Accusantium, temporibus. Ullam magni tenetur dolorum nihil architecto, ab dolor aliquid, doloremque consequuntur eveniet, provident quo laborum? Saepe atque debitis sint, ab perspiciatis beatae aliquam fugit sapiente.</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  transition: "default"
-}
+export default {}
 </script>
 
 <style scoped lang="scss">
-  .dev-icon {
-    position: absolute;
-  }
-
-  #vue {
-    left: 3%;
-    bottom: 7%;
-    
-    img {
-      width: 60%;
-      margin-top: 15px;
-      -webkit-filter: drop-shadow(3px 3px 3px #222);
-      filter: drop-shadow(3px 3px 3px #222);
-    }
-  }
-
-  #ror {
-    top: 30%;
-    left: 10%;
-
-    img {
-      width: 70%;
-      margin-top: 15px;
-      -webkit-filter: drop-shadow(3px 3px 3px #222);
-      filter: drop-shadow(3px 3px 3px #222);
-    }
-  }
-
-  #js {
-    bottom: 15%;
-    left: 55%;
-
-    img {
-      width: 60%;
-      margin-top: 15px;
-      -webkit-filter: drop-shadow(3px 3px 3px #222);
-      filter: drop-shadow(3px 3px 3px #222);
-    }
+  .work-card {
+    align-items: flex-start !important;
   }
 </style>

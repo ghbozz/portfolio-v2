@@ -12,6 +12,7 @@
 }
 
 .work-card::before {
+  @apply ring-2 ring-secondary-light ring-opacity-30;
   background-color: $primary-green;
   height: 24rem;
   width: 24rem;

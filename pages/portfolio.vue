@@ -53,7 +53,7 @@ export default {
 
 <style scoped lang="scss">
   .container {
-    padding-top: 64px;
+    padding-top: 90px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr);
