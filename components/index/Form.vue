@@ -6,10 +6,10 @@
     </div>
     <div class="flex flex-col text-1xl">
       <label class="relative vim-mode" for="body">message</label>
-      <textarea class="h-48" @focus="focus" name="body"></textarea>
+      <textarea @focus="focus" name="body"></textarea>
     </div>
     <div class="flex justify-center items-center mt-2">
-      <button class="main-btn relative text-3xl">
+      <button class="main-btn relative text-lg xl:text-2xl">
         send
       </button>
     </div>

@@ -2,12 +2,13 @@
   <div>
     <SharedNav />
     <Nuxt />
-    <!-- <SharedBreakpoints /> -->
   </div>
 </template>
 
 <script>
-export default {}
+import Breakpoints from '../components/shared/Breakpoints.vue'
+export default {
+  components: { Breakpoints },}
 
 </script>
 
