@@ -34,7 +34,7 @@ export default {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    top: 20px;
+    top: 25px;
     right: 0;
     z-index: 999;
   }

@@ -1,6 +1,8 @@
 <template>
   <div class="w-full mt-12 lg:mt-0 text-primary-light">
-    <div class="container mx-auto min-h-container pb-6">
+    <div class="container mx-auto min-h-container pb-6"
+         v-if="!this.$store.state.mobile.menu">
+         
       <div class="display-title hidden lg:flex justify-between items-end">
         <transition name="side-slide" mode="out-in" appear>
           <h2 v-if="selected"

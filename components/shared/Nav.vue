@@ -1,9 +1,10 @@
 <template>
-  <nav class="w-screen flex items-center justify-between fixed top-0 px-0 md:px-12 h-24"
+  <nav class="w-screen flex items-center justify-between fixed top-0 md:px-12 h-20 px-8"
        :class="$nuxt.$route.path == '/' ? 'flex-row-reverse' : 'flex-row'">
 
     <NuxtLink to="/" 
               v-if="$nuxt.$route.path !== '/'"
+              @click="close_mobile"
               :class="'text-2xl'">
 
       <span class="text-gradient-light pl-1">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1">.dev</span>
@@ -21,6 +22,11 @@ export default {
   data() {
     return {
       logo: require('~/assets/images/logo.png'),
+    }
+  },
+  methods: {
+    close_mobile() {
+      this.$store.commit('mobile/toggle')
     }
   }
 }

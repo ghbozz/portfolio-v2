@@ -1,6 +1,8 @@
 <template>
-  <div id="about" class="w-full h-full dark-break-secondary relative">
-    <div class="container mx-auto h-screen flex items-center justify-start pt-48 md:pt-0 md:justify-between flex-col md:flex-row">
+  <div id="about" class="w-full h-screen dark-break-secondary relative">
+    <div class="container mx-auto h-screen flex items-center justify-start pt-28 md:pt-0 md:justify-between flex-col md:flex-row"
+         v-if="!this.$store.state.mobile.menu">
+         
       <AboutLeftScene />
       <div class="text-primary-light w-full md:w-1/2 work-card glass dark-linear flex flex-col">
         <h2 class="text-3xl md:text-6xl uppercase mb-6 text-left">about me</h2>
