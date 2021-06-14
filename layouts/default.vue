@@ -1,15 +1,13 @@
 <template>
   <div>
+    <SharedMobileMenu />
     <SharedNav />
     <Nuxt />
   </div>
 </template>
 
 <script>
-import Breakpoints from '../components/shared/Breakpoints.vue'
-export default {
-  components: { Breakpoints },}
-
+export default {}
 </script>
 
 <style>

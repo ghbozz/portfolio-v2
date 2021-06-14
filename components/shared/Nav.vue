@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-screen flex items-center justify-between fixed top-0 px-4 md:px-12 h-24"
+  <nav class="w-screen flex items-center justify-between fixed top-0 px-0 md:px-12 h-24"
        :class="$nuxt.$route.path == '/' ? 'flex-row-reverse' : 'flex-row'">
 
     <NuxtLink to="/" 
@@ -12,6 +12,7 @@
       <li class="nav-item"><NuxtLink to="/portfolio">portfolio</NuxtLink></li>
       <li class="nav-item"><NuxtLink to="/about">about</NuxtLink></li>
     </ul>
+    <SharedBurgerMenu />
   </nav>
 </template>
 
@@ -26,6 +27,10 @@ export default {
 </script>
 
 <style lang="scss">
+  .open {
+    height: 30rem;
+  }
+
   #logo {
     width: 50px;
     height: 50px;
