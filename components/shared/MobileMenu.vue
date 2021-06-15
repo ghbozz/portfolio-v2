@@ -5,6 +5,7 @@
         <li @click="close" class="nav-item w-full text-4xl text-left mb-5"><NuxtLink to="/portfolio">portfolio</NuxtLink></li>
         <li @click="close" class="nav-item w-full text-4xl text-left mb-5"><NuxtLink to="/about">about</NuxtLink></li>
       </ul>
+      <SharedSocialsIcons />
     </div>
   </transition>
 </template>

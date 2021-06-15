@@ -2,7 +2,7 @@
   <div id="socials" class="h-full w-full duration-2000 relative">
 
     <div id="icons" class="absolute flex items-center justify-center w-full">
-      <IndexIcons />
+      <SharedSocialsIcons />
     </div>
   </div>
 </template>
