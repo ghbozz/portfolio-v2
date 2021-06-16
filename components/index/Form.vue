@@ -39,7 +39,7 @@ export default {
     },
     async send(evt) {
       evt.preventDefault();
-      // this.$store.commit('notice/open_notice', 'success')
+      this.$store.commit('notice/open_notice', 'success')
 
       this.$mail.send({
         from: 'John Doe',
