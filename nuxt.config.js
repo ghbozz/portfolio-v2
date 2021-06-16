@@ -72,7 +72,20 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     "@nuxtjs/axios",
     "@nuxtjs/style-resources",
-    "@nuxt/content"
+    "@nuxt/content",
+
+    [
+      "nuxt-mail",
+      {
+        message: {
+          to: "romain.sanson@hey.com"
+        },
+        smtp: {
+          host: "mail.gandi.net",
+          port: 587
+        }
+      }
+    ]
   ],
   /*
    ** Axios module configuration

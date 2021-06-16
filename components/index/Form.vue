@@ -23,7 +23,6 @@ export default {
       labels: null,
       email: '',
       body: '',
-      sib_key: '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'
     }
   },
   methods: {
@@ -40,7 +39,14 @@ export default {
     },
     async send(evt) {
       evt.preventDefault();
-      this.$store.commit('notice/open_notice', 'success')
+      // this.$store.commit('notice/open_notice', 'success')
+
+      this.$mail.send({
+        from: 'John Doe',
+        subject: 'Incredible',
+        text: 'This is an incredible test message',
+      })
+
       this.close_notice();
     },
     close_notice() {
