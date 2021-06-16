@@ -1,7 +1,8 @@
 <template>
   <div class="w-full h-full dark-break-primary">
+    <SharedNotice v-if="this.$store.state.notice.status" />
     <div class="container mx-auto h-screen pt-6 md:pt-0">
-      <div class="flex items-center justify-center flex-col h-screen" v-if="!this.$store.state.mobile.menu">
+      <div class="flex items-center justify-center flex-col pt-12 md:pt-0 h-screen" v-if="!this.$store.state.mobile.menu">
         <transition name="up-slide" mode="out-in" appear>
           <h1 class="text-4xl md:text-7xl mb-4">
             <span class="text-gradient-light">romain</span><span class="font-extralight opacity-70 text-primary-light">sanson</span><span class="text-gradient-green font-semibold pr-1 glow">.dev</span>

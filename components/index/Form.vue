@@ -39,7 +39,7 @@ export default {
     },
     send(evt) {
       evt.preventDefault();
-      console.log(this.email, this.body);
+      this.$store.commit('notice/open_notice', 'success')
     }
   },
   mounted() {

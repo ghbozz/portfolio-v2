@@ -1,11 +1,27 @@
 <template>
   <div>
-    <transition v-for="lang in languages" :key="lang.name" name="up-slide" mode="out-in" appear>
-      <div :id="lang.name" 
-           class="rounded-full w-24 h-24 md:w-40 md:h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
-           :style="`transition-delay: 0.${lang.delay}s;`">
+    <transition name="up-slide" mode="out-in" appear>
+      <div id="vue" 
+           class="rounded-full w-40 h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
+           style="transition-delay: 0.1s;">
 
-        <img :src="require(`~/assets/${lang.logo}`)" alt="">
+        <img src="~/assets/icons/dev/vue.png" alt="">
+      </div>
+    </transition>
+    <transition name="up-slide" mode="out-in" appear>
+      <div id="ror" 
+               class="rounded-full w-40 h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
+               style="transition-delay: 0.3s;">
+
+        <img class="dev-icon" src="~/assets/icons/dev/ruby-flat.png" alt="">
+      </div>
+    </transition>
+    <transition name="up-slide" mode="out-in" appear>
+      <div id="js" 
+           class="rounded-full w-40 h-40 absolute dark-linear dev-icon glass flex items-center justify-center shadow-lg ring-2 ring-secondary-light ring-opacity-30"
+           style="transition-delay: 0.5s;">
+
+        <img class="dev-icon" src="~/assets/icons/dev/javascript.png" alt="">
       </div>
     </transition>
     <transition name="fade-in" mode="out-in" appear>
@@ -15,17 +31,7 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      languages: [
-        { name: 'vue', logo: 'icons/dev/vue.png', delay: 1 },
-        { name: 'ruby', logo: 'icons/dev/ruby-flat.png', delay: 3 },
-        { name: 'js', logo: 'icons/dev/javascript.png', delay: 5 }
-      ]
-    }
-  }
-}
+export default {}
 </script>
 
 <style scoped lang="scss">
@@ -34,36 +40,36 @@ export default {
   }
 
   #vue {
-    left: 2%;
-    bottom: 10%;
+    left: 3%;
+    bottom: 7%;
 
     img {
-      width: 40%;
-      margin-top: 5px;
+      width: 60%;
+      margin-top: 15px;
       -webkit-filter: drop-shadow(3px 3px 3px #222);
       filter: drop-shadow(3px 3px 3px #222);
     }
   }
 
-  #ruby {
-    bottom: 15%;
-    left: 45%;
+  #ror {
+    top: 30%;
+    left: 10%;
 
     img {
-      width: 50%;
-      margin-top: 5px;
+      width: 70%;
+      margin-top: 15px;
       -webkit-filter: drop-shadow(3px 3px 3px #222);
       filter: drop-shadow(3px 3px 3px #222);
     }
   }
 
   #js {
-    bottom: 2.5%;
-    left: 65%;
+    bottom: 10%;
+    left: 55%;
 
     img {
-      width: 40%;
-      margin-top: 5px;
+      width: 60%;
+      margin-top: 15px;
       -webkit-filter: drop-shadow(3px 3px 3px #222);
       filter: drop-shadow(3px 3px 3px #222);
     }
@@ -73,43 +79,5 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
-  }
-
-  @media (min-width: 768px) {
-    #vue {
-      left: 3%;
-      bottom: 7%;
-
-      img {
-        width: 60%;
-        margin-top: 15px;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-        filter: drop-shadow(3px 3px 3px #222);
-      }
-    }
-
-    #ruby {
-      top: 30%;
-      left: 10%;
-
-      img {
-        width: 70%;
-        margin-top: 15px;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-        filter: drop-shadow(3px 3px 3px #222);
-      }
-    }
-
-    #js {
-      bottom: 10%;
-      left: 55%;
-
-      img {
-        width: 60%;
-        margin-top: 15px;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-        filter: drop-shadow(3px 3px 3px #222);
-      }
-    }
   }
 </style>

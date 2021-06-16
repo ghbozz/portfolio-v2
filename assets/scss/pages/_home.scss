@@ -124,3 +124,21 @@
     }
   }
 }
+
+@media screen and (max-height: 667px) {
+  #socials-wrapper {
+    height: 3.5rem;
+
+    #socials {
+      height: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  #form-wrapper {
+    height: 75%;
+    padding-bottom: 3.5rem;
+  }
+}
