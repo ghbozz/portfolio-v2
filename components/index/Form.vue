@@ -42,9 +42,9 @@ export default {
       this.$store.commit('notice/open_notice', 'success')
 
       this.$mail.send({
-        from: 'John Doe',
-        subject: 'Incredible',
-        text: 'This is an incredible test message',
+        from: this.email,
+        subject: 'new contact from romainsanson.dev',
+        text: this.body,
       })
 
       this.close_notice();

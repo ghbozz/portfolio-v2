@@ -81,8 +81,13 @@ export default {
           to: "romain.sanson@hey.com"
         },
         smtp: {
-          host: "https://ghbozz.github.io",
-          port: 587
+          host: "mail.gandi.net",
+          port: 587,
+          secure: false,
+          auth: {
+            user: process.env.EMAIL_USERNAME,
+            pass: process.env.EMAIL_PASSWORD
+          }
         }
       }
     ]
