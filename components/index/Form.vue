@@ -23,6 +23,7 @@ export default {
       labels: null,
       email: '',
       body: '',
+      sib_key: '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'
     }
   },
   methods: {
@@ -37,9 +38,15 @@ export default {
     clear() {
       this.labels.forEach(label => label.classList.remove('active'))
     },
-    send(evt) {
+    async send(evt) {
       evt.preventDefault();
       this.$store.commit('notice/open_notice', 'success')
+      this.close_notice();
+    },
+    close_notice() {
+      setTimeout(() => {
+        this.$store.commit('notice/close_notice')
+      }, 3000)
     }
   },
   mounted() {

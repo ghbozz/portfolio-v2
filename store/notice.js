@@ -8,5 +8,10 @@ export const mutations = {
     state.status = status;
     state.notice = true;
     console.log(state.notice, state.status);
+  },
+
+  close_notice(state) {
+    state.notice = false;
+    state.status = null;
   }
 };
