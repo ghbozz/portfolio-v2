@@ -2,14 +2,14 @@
   <form class="w-10/12 md:w-2/3">
     <div class="flex flex-col text-1xl">
       <label class="relative vim-mode" for="email">email</label>
-      <input @focus="focus" type="text" name="email">
+      <input v-model="email" @focus="focus" type="text" name="email">
     </div>
     <div class="flex flex-col text-1xl">
       <label class="relative vim-mode" for="body">message</label>
-      <textarea @focus="focus" name="body"></textarea>
+      <textarea v-model="body" @focus="focus" name="body"></textarea>
     </div>
     <div class="flex justify-center items-center mt-2">
-      <button class="main-btn relative text-lg xl:text-2xl">
+      <button @click="send" class="main-btn relative text-lg xl:text-2xl">
         send
       </button>
     </div>
@@ -20,7 +20,9 @@
 export default {
   data() {
     return {
-      labels: null
+      labels: null,
+      email: '',
+      body: '',
     }
   },
   methods: {
@@ -34,6 +36,10 @@ export default {
     },
     clear() {
       this.labels.forEach(label => label.classList.remove('active'))
+    },
+    send(evt) {
+      evt.preventDefault();
+      console.log(this.email, this.body);
     }
   },
   mounted() {

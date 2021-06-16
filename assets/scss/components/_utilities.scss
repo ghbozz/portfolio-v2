@@ -3,6 +3,9 @@
 }
 
 body {
+  height: 100vh !important;
+  overflow: hidden !important;
+
   background: rgb(44, 46, 59);
   background: radial-gradient(
     circle,
