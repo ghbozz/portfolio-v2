@@ -40,7 +40,7 @@ export default {
     async send(evt) {
       evt.preventDefault();
 
-      const response = await this.$axios.$post('/mail/send', {
+      const response = await this.$axios.$post('http://romainsanson-portfolio.herokuapp.com/mail/send', {
         from: this.email,
         subject: 'new contact from romainsanson.dev',
         text: this.body,
