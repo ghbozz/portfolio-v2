@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/contact", async (req, res) => {
-  let testAccount = await nodemailer.createTestAccount();
+  // let testAccount = await nodemailer.createTestAccount();
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -33,8 +33,7 @@ app.post("/contact", async (req, res) => {
   });
 });
 
-app.listen(8080);
-console.log("App is running on port 8080");
+app.listen(process.env.PORT);
 
 module.exports = {
   path: "/api",
