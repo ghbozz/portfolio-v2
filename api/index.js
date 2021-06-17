@@ -5,6 +5,10 @@ var app = express();
 
 app.use(parser.json());
 
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+
 app.post("/contact", async (req, res) => {
   let testAccount = await nodemailer.createTestAccount();
 
