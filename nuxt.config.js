@@ -111,5 +111,9 @@ export default {
    */
   build: {
     extractCSS: true
+  },
+
+  server: {
+    port: process.env.PORT || 3000
   }
 };

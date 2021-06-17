@@ -10,7 +10,7 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "push": "rm -rf dist && nuxt generate && yarn deploy",
     "cleanup": "git add . && git commit -m 'cleanup' && git push origin master && yarn push",
-    "heroku-postbuild": "yarn build"
+    "heroku-postbuild": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
