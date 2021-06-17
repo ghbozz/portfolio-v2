@@ -28,8 +28,7 @@ app.post("/contact", async (req, res) => {
     from: req.body.email, // sender address
     to: "romain.sanson@hey.com", // list of receivers
     subject: "new contact from romainsanson.dev", // Subject line
-    text: req.body.message, // plain text body
-    html: "<head></head><body><p>hello</p></body>"
+    text: req.body.message // plain text body
   });
 });
 
