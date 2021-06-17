@@ -73,7 +73,7 @@ export default {
     "@nuxtjs/axios",
     "@nuxtjs/style-resources",
     "@nuxt/content",
-
+    // nuxt-mail setup
     [
       "nuxt-mail",
       {
