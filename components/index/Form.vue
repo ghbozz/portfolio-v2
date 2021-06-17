@@ -46,7 +46,7 @@ export default {
         text: this.body,
       })
 
-      console.log(response)
+      console.log(this.$axios.defaults.baseURL)
       if (response === 'OK') this.$store.commit('notice/open_notice', 'success')
       if (response !== 'OK') this.$store.commit('notice/open_notice', 'failure')
 
