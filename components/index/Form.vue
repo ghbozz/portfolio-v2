@@ -39,8 +39,9 @@ export default {
     },
     async send(evt) {
       evt.preventDefault();
+      console.log(this.$router.matcher.getRoutes())
 
-      const response = await this.$axios.$post('https://ghbozz.github.io/mail/send', {
+      const response = await this.$axios.$post('/mail/send', {
         from: this.email,
         subject: 'new contact from romainsanson.dev',
         text: this.body,
