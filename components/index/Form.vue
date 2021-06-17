@@ -46,6 +46,7 @@ export default {
         text: this.body,
       })
 
+      console.log(response)
       if (response === 'OK') this.$store.commit('notice/open_notice', 'success')
       if (response !== 'OK') this.$store.commit('notice/open_notice', 'failure')
 
