@@ -14,7 +14,8 @@ module.exports = {
       "secondary-light": "#d7e0dd",
       "primary-gray": "#b2b9b7",
       "secondary-gray": "#767a79",
-      "primary-green": "#05a672"
+      "primary-green": "#05a672",
+      "primary-red": "#dc3d3b"
     },
     container: {
       padding: {

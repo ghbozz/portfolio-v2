@@ -18,7 +18,7 @@
         <PortfolioPreview id="preview" :work="selected" v-if="selected" />
       </div>
       <div class="recent-works-title flex items-end justify-start">
-        <h2 class="uppercase text-4xl">recent works</h2>
+        <h2 class="uppercase text-4xl">recent work</h2>
       </div>
         <PortfolioCard
           v-for="work in works" 
