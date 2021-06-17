@@ -18,8 +18,6 @@ app.post("/contact", async (req, res) => {
       pass: process.env.EMAIL_PASSWORD // generated ethereal password
     }
   });
-  console.log("TRANSPORTER");
-  console.log(transporter);
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
@@ -28,10 +26,9 @@ app.post("/contact", async (req, res) => {
     subject: "new contact from romainsanson.dev", // Subject line
     text: req.body.message // plain text body
   });
-  console.log("INFO");
-  console.log(info);
 
   res.send(info);
+  res.end();
 });
 
 module.exports = {
