@@ -11,7 +11,7 @@ export default {
   target: "static",
   // Router
   router: {
-    base: process.env.NODE_ENV === "production" ? "/portfolio-v2/" : "/"
+    base: process.env.NODE_ENV === "production" ? "/" : "/"
   },
   /*
    ** Headers of the page
