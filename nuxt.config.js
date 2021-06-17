@@ -99,7 +99,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: "/"
+    baseURL: process.env.BASE_URL || "http://localhost:3000/api"
   },
 
   styleResources: {
