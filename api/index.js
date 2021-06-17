@@ -33,6 +33,9 @@ app.post("/contact", async (req, res) => {
   });
 });
 
+app.listen(8080);
+console.log("App is running on port 8080");
+
 module.exports = {
   path: "/api",
   handler: app
