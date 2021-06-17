@@ -58,6 +58,8 @@ export default {
    ** See https://nuxtjs.org/api/configuration-components
    */
   components: true,
+
+  serverMiddleware: ["~/api/index"],
   /*
    ** Nuxt.js dev-modules
    */

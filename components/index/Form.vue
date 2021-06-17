@@ -6,7 +6,7 @@
     </div>
     <div class="flex flex-col text-1xl">
       <label class="relative vim-mode" for="body">message</label>
-      <textarea v-model="body" @focus="focus" name="body"></textarea>
+      <textarea v-model="message" @focus="focus" name="body"></textarea>
     </div>
     <div class="flex justify-center items-center mt-2">
       <button @click="send" class="main-btn relative text-lg xl:text-2xl">
@@ -22,7 +22,7 @@ export default {
     return {
       labels: null,
       email: '',
-      body: '',
+      message: '',
     }
   },
   methods: {
@@ -40,14 +40,11 @@ export default {
     async send(evt) {
       evt.preventDefault();
 
-      const response = await this.$axios.$post('/mail/send', {
-        from: this.email,
-        subject: 'new contact from romainsanson.dev',
-        text: this.body,
-      })
+      const response = await this.$axios.post('api/contact', { email: this.email, message: this.message })
+      console.log(response)
 
-      if (response === 'OK') this.$store.commit('notice/open_notice', 'success')
-      if (response !== 'OK') this.$store.commit('notice/open_notice', 'failure')
+      if (response.data === 'success') this.$store.commit('notice/open_notice', 'success')
+      if (response.data === 'failure') this.$store.commit('notice/open_notice', 'failure')
 
       this.close_notice();
     },
