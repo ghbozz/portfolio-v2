@@ -96,7 +96,9 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: process.env.BASE_URL
+  },
 
   styleResources: {
     scss: ["assets/scss/_variables.scss"]
