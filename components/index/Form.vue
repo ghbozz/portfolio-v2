@@ -39,7 +39,6 @@ export default {
     },
     async send(evt) {
       evt.preventDefault();
-      console.log(this.$router.matcher.getRoutes())
 
       const response = await this.$axios.$post('/mail/send', {
         from: this.email,
