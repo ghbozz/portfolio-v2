@@ -40,8 +40,7 @@ export default {
     async send(evt) {
       evt.preventDefault();
 
-      const response = await this.$axios.post('api/contact', { email: this.email, message: this.message })
-      console.log(response)
+      const response = await this.$axios.$post('/contact', { email: this.email, message: this.message })
 
       if (response.data === 'success') this.$store.commit('notice/open_notice', 'success')
       if (response.data === 'failure') this.$store.commit('notice/open_notice', 'failure')

@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/contact", async (req, res) => {
-  // let testAccount = await nodemailer.createTestAccount();
+  let testAccount = await nodemailer.createTestAccount();
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
