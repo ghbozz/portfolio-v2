@@ -8,7 +8,7 @@ export default {
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
-  target: "server",
+  target: "static",
   // Router
   router: {
     base: process.env.NODE_ENV === "production" ? "/" : "/"
