@@ -30,8 +30,8 @@ app.post("/contact", async (req, res) => {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: req.body.email, // sender address
-    to: "contact@email.com", // list of receivers
-    subject: "new contact", // Subject line
+    to: "romain.sanson@hey.com", // list of receivers
+    subject: "new contact from romainsanson.dev", // Subject line
     text: req.body.message // plain text body
   });
 
