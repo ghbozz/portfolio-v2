@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 
 app.post("/contact", async (req, res) => {
   // let testAccount = await nodemailer.createTestAccount();
-
+  console.log("api/contact");
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "mail.gandi.net",
@@ -35,7 +35,7 @@ app.post("/contact", async (req, res) => {
     text: req.body.message // plain text body
   });
 
-  res.end();
+  console.log(info);
 });
 
 module.exports = {
