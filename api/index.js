@@ -11,7 +11,6 @@ app.use(
 
 app.get("/", (req, res) => {
   res.send("hello world");
-  console.log("express api");
 });
 
 app.post("/contact", async (req, res) => {
@@ -31,8 +30,8 @@ app.post("/contact", async (req, res) => {
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: req.body.email, // sender address
-    to: "romain.sanson@hey.com", // list of receivers
-    subject: "new contact from romainsanson.dev", // Subject line
+    to: "contact@email.com", // list of receivers
+    subject: "new contact", // Subject line
     text: req.body.message // plain text body
   });
 
