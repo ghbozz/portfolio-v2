@@ -37,6 +37,7 @@ app.post("/contact", async (req, res) => {
   });
 
   console.log(info);
+  res.end();
 });
 
 app.listen(process.env.PORT);
