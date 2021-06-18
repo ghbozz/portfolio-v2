@@ -38,8 +38,6 @@ app.post("/contact", async (req, res) => {
   res.end();
 });
 
-app.listen(process.env.PORT);
-
 module.exports = {
   path: "/api",
   handler: app
