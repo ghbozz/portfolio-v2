@@ -14,9 +14,6 @@ app.get("/", (req, res) => {
 });
 
 app.post("/contact", async (req, res) => {
-  // let testAccount = await nodemailer.createTestAccount();
-  console.log("api/contact");
-  // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "mail.gandi.net",
     port: 587,
@@ -27,15 +24,15 @@ app.post("/contact", async (req, res) => {
     }
   });
 
-  // send mail with defined transport object
-  let info = await transporter.sendMail({
+  let data = await transporter.sendMail({
     from: req.body.email, // sender address
     to: "romain.sanson@hey.com", // list of receivers
     subject: "new contact from romainsanson.dev", // Subject line
     text: req.body.message // plain text body
   });
 
-  console.log(info);
+  const status = data.response.split(":")[0] === "250 2.0.0 Ok" ? 'success' : 'failure';
+  res.send({ status: status });
 });
 
 module.exports = {

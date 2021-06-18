@@ -3,3 +3,4 @@ animations.css
 
 # Ignored JS files:
 utilities.js
+api/index.js

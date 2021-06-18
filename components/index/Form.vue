@@ -40,17 +40,31 @@ export default {
     async send(evt) {
       evt.preventDefault();
 
+      if (!this.validate()) {
+        this.$store.commit('notice/open_notice', 'invalid')
+        this.close_notice();
+        return
+      }
+
       const response = await this.$axios.$post('/contact', { email: this.email, message: this.message })
 
-      if (response.data === 'success') this.$store.commit('notice/open_notice', 'success')
-      if (response.data === 'failure') this.$store.commit('notice/open_notice', 'failure')
+      if (response.status === 'success') this.$store.commit('notice/open_notice', 'success')
+      if (response.status === 'failure') this.$store.commit('notice/open_notice', 'failure')
 
+      this.clear_form();
       this.close_notice();
     },
     close_notice() {
       setTimeout(() => {
         this.$store.commit('notice/close_notice')
-      }, 3000)
+      }, 5000)
+    },
+    clear_form() {
+      this.email = '';
+      this.message = '';
+    },
+    validate() {
+      return /.+@.+/.test(this.email) && /.+/.test(this.message)
     }
   },
   mounted() {
