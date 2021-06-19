@@ -10,10 +10,14 @@ app.use(
 );
 
 app.get("/", (req, res) => {
+  console.log('/api')
   res.send("hello world");
 });
 
 app.post("/contact", async (req, res) => {
+  console.log('api/contact')
+  console.log(process.env.EMAIL_USERNAME)
+
   let transporter = nodemailer.createTransport({
     host: "mail.gandi.net",
     port: 587,
