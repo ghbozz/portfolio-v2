@@ -11,32 +11,31 @@ app.use(
 
 app.get("/", (req, res) => {
   console.log('/api')
-  res.send("hello world");
 });
 
 app.post("/contact", async (req, res) => {
-  console.log('api/contact')
-  console.log(process.env.EMAIL_USERNAME)
-
   let transporter = nodemailer.createTransport({
     host: "mail.gandi.net",
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false,
     auth: {
-      user: process.env.EMAIL_USERNAME, // generated ethereal user
-      pass: process.env.EMAIL_PASSWORD // generated ethereal password
+      user: process.env.EMAIL_USERNAME,
+      pass: process.env.EMAIL_PASSWORD
     }
   });
 
-  let data = await transporter.sendMail({
-    from: req.body.email, // sender address
-    to: "romain.sanson@hey.com", // list of receivers
-    subject: "new contact from romainsanson.dev", // Subject line
-    text: req.body.message // plain text body
-  });
-
-  const status = data.response.split(":")[0] === "250 2.0.0 Ok" ? 'success' : 'failure';
-  res.send({ status: status });
+  try {
+    let data = await transporter.sendMail({
+      from: req.body.email,
+      to: "romain.sanson@hey.com",
+      subject: "new contact from romainsanson.dev",
+      text: req.body.message
+    });
+    const status = data.response.split(":")[0] === "250 2.0.0 Ok" ? 'success' : 'failure';
+    res.send({ status: status });
+  } catch (error) {
+    res.send({ status: 'failure' });
+  }
 });
 
 module.exports = {
