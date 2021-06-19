@@ -25,9 +25,6 @@ export default {
     logo() {
       return require(`~/assets/images/works/${this.work.logo}`)
     }
-  },
-  mounted() {
-    console.log(this.work)
   }
 }
 </script>
