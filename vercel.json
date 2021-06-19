@@ -5,8 +5,7 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "internalServer": true,
-        "serverFiles": ["api/**"]
+        "serverFiles": ["api/**", "content/**"]
       }
     }
   ]
