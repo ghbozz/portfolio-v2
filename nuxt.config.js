@@ -99,7 +99,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: "https://portfolio-v2-silk.vercel.app/api"
+    baseURL: "https://www.romainsanson.dev/api"
   },
 
   styleResources: {
