@@ -9,13 +9,9 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  console.log('/api')
-});
-
 app.post("/contact", async (req, res) => {
   let transporter = nodemailer.createTransport({
-    host: "mail.gandi.net",
+    host: process.env.EMAIL_SMTP,
     port: 587,
     secure: false,
     auth: {
@@ -25,14 +21,17 @@ app.post("/contact", async (req, res) => {
   });
 
   try {
+
     let data = await transporter.sendMail({
       from: req.body.email,
       to: "romain.sanson@hey.com",
       subject: "new contact from romainsanson.dev",
       text: req.body.message
     });
+
     const status = data.response.split(":")[0] === "250 2.0.0 Ok" ? 'success' : 'failure';
     res.send({ status: status });
+    
   } catch (error) {
     res.send({ status: 'failure' });
   }
